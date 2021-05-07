@@ -1,11 +1,8 @@
 const {Router} = require('express')
 const router = Router()
 
-router.get('/home', async (req, res) => {
-    res.render('home', {
-        title: 'Главная',
-        isCourses: true,
-    })
+router.get('/home',   (req, res) => {
+    res.render('home')
 })
 
 module.exports = router
