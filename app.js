@@ -1,20 +1,24 @@
 let express = require('express'),
     path = require('path'),
-    login = require('./routes/login'),
+    loginRoutes = require('./routes/login'),
+    homeRoutes = require('./routes/home'),
     db = require('./db')
 
 const app = express()
 
-db.connectToDB
+app.set('view engine', 'hbs')
+app.set('views', 'views')
 
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'hbs');
+db.connectToDB
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({extended: true}));
 
-app.use('/', login)
+
+app.use('/', loginRoutes)
+app.use('/', homeRoutes)
+
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT)

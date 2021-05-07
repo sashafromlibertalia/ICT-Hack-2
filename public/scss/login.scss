@@ -1,5 +1,87 @@
 @import "variables";
 
 body {
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
+  background-repeat: no-repeat;
+  background-size: auto; /* Современные браузеры */
+}
+
+form { text-align: center; }
+
+.log_data {
+  font-family: "Comic Sans MS";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 10px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.send_button {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.enter_platform {
+  font-family: "Comic Sans MS";
+  font-size: 3em;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+p { line-break: strict; }
+
+input[type=text] {
+  font-family: "Comic Sans MS";
+  width: 400px;
+  height: 50px;
+  align-self: center;
+  font-size: 2em;
+  border-radius: 3px;
+}
+
+input[type=password] {
+  font-family: "Comic Sans MS";
+  width: 400px;
+  height: 50px;
+  align-self: center;
+  font-size: 2em;
+  border-radius: 3px;
+}
+
+input[type=sumbit] {
+  font-family: "Comic Sans MS";
+  font-size: 2em;
+  color: inherit;
+  border-radius: 3px;
+  background-color: blue;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  font-family: "Comic Sans MS";
+  background: blue;
+  color: white;
+  font-size: 2em;
 }
