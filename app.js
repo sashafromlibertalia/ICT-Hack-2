@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 app.use('/', login)
+// app.use('/home', home)
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT)
