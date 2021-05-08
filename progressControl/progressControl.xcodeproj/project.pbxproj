@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D101CE662646AF4800CF7FEA /* GeneralPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D101CE652646AF4700CF7FEA /* GeneralPage.swift */; };
+		D101CE682646BA5800CF7FEA /* productivityWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D101CE672646BA5800CF7FEA /* productivityWidgets.swift */; };
 		D19861482645906000EA617F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19861472645906000EA617F /* AppDelegate.swift */; };
 		D198614A2645906000EA617F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19861492645906000EA617F /* SceneDelegate.swift */; };
 		D198614C2645906000EA617F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198614B2645906000EA617F /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D101CE652646AF4700CF7FEA /* GeneralPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPage.swift; sourceTree = "<group>"; };
+		D101CE672646BA5800CF7FEA /* productivityWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productivityWidgets.swift; sourceTree = "<group>"; };
 		D19861442645906000EA617F /* progressControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = progressControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19861472645906000EA617F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D19861492645906000EA617F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				D19861492645906000EA617F /* SceneDelegate.swift */,
 				D198614B2645906000EA617F /* ViewController.swift */,
 				D198614D2645906000EA617F /* Main.storyboard */,
+				D101CE672646BA5800CF7FEA /* productivityWidgets.swift */,
+				D101CE652646AF4700CF7FEA /* GeneralPage.swift */,
 				D19861502645906200EA617F /* Assets.xcassets */,
 				D19861522645906200EA617F /* LaunchScreen.storyboard */,
 				D19861552645906200EA617F /* Info.plist */,
@@ -140,6 +146,8 @@
 				D198614C2645906000EA617F /* ViewController.swift in Sources */,
 				D19861482645906000EA617F /* AppDelegate.swift in Sources */,
 				D198614A2645906000EA617F /* SceneDelegate.swift in Sources */,
+				D101CE682646BA5800CF7FEA /* productivityWidgets.swift in Sources */,
+				D101CE662646AF4800CF7FEA /* GeneralPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
