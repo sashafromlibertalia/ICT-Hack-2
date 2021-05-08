@@ -12,7 +12,7 @@
 </head>
 <body>
 {{>navbar}}
-    <h1 id="greeting-header">{{message}}</h1>
+<h1 id="greeting-header">{{message}}</h1>
 <div id="container">
     <section id="1">
         <div class="title">
@@ -20,10 +20,30 @@
             <span>неделю</span>
         </div>
         <div class="left">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            {{#each cards}}
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-header">
+                            <div class="img-container">
+                                <span style="background-image: {{this.header_img}}"></span>
+                            </div>
+                            <h1>{{this.header}}</h1>
+                        </div>
+                        <div class="text">
+                            <h1>{{this.text}}</h1>
+                        </div>
+                        <div class="stats">
+                            {{#if this.stat_color}}
+                                <span class="arrow">
+                                    <span style="background-image: {{this.arrow}}"></span>
+                                </span>
+                                <span class="arrow-text" style="color: {{this.stat_color}}">{{this.stat_info}}</span>
+                            {{/if}}
+                            <span class="stats-text">{{this.stat_text}}</span>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
         </div>
         <div class="right">
 

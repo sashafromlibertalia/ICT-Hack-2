@@ -44,6 +44,7 @@ li {
   position: absolute;
   left: 3%;
   right: 3%;
+
   & section {
     width: 100%;
     display: grid;
@@ -55,6 +56,7 @@ li {
       flex-wrap: wrap;
       margin: 0;
       align-items: center;
+
       & h1 {
         font-family: $proxima;
         margin: 0;
@@ -80,7 +82,7 @@ li {
 }
 
 .left {
-  width: 45%;
+  width: 25%;
   min-height: 180px;
   display: flex;
   justify-content: space-between;
@@ -89,6 +91,101 @@ li {
   & .card {
     width: $cardWidth;
     height: $cardHeight;
-    background: beige;
+    box-shadow: 0 0 16px #E6E6E6;
+    border-radius: $defaultCornerRadius + 4px;
+
+    .card-wrapper {
+      height: 100%;
+      padding: 15px;
+
+      .card-header {
+        width: 100%;
+        height: 25%;
+        display: flex;
+
+        & h1 {
+          font-style: italic;
+          font-weight: bold;
+          font-size: 15px;
+          margin: 0;
+          line-break: auto;
+          font-family: $proxima;
+          color: $black-text-color;
+          display: flex;
+          margin-left: 5px;
+          justify-content: left;
+          align-items: center;
+          text-align: left;
+        }
+
+        & .img-container {
+          width: 38px;
+          height: 38px;
+          padding: 4px;
+          display:table;
+          left: 0;
+          background-size: cover;
+
+          & span {
+            display:table-cell;
+            vertical-align:middle;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+      .text {
+        height: 60%;
+        text-align: left;
+
+        & h1 {
+          font-weight: bold;
+          font-size: 50px;
+          height: 100%;
+          margin: 0;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          text-align: left;
+          line-break: auto;
+          font-family: $proxima;
+          color: $black-text-color;
+        }
+      }
+
+      .stats {
+        height: 15%;
+        display: flex;
+        .arrow {
+          //padding: 5px;
+          height: 100%;
+          width: 12px;
+          margin: 0;
+          display: block;
+          & span {
+            background-size: cover;
+            width: 12px;
+            height: 20px;
+            display: block;
+            margin: 0;
+          }
+        }
+
+        .arrow-text {
+          color: $up;
+          font-size: 14px;
+          margin-left: 5px;
+        }
+
+        .stats-text {
+          color: $gray-unactive;
+          font-family: $proxima;
+          font-size: 14px;
+          margin-left: 5px;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }
