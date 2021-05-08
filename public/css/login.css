@@ -1,93 +1,92 @@
-@charset "UTF-8";
+@font-face {
+  src: url("/public/assets/fonts/ProximaNova-Regular.woff") format("woff");
+  font-family: "Proxima Nova", sans-serif;
+}
+@font-face {
+  src: url("/public/assets/fonts/HelveticaNeue-Roman.woff") format("woff");
+  font-family: "Helvetica Neue", sans-serif;
+}
 body {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, 20%);
   background-repeat: no-repeat;
-  background-size: auto;
-  /* Современные браузеры */
+  background-size: cover;
+}
+body h1 {
+  text-align: center;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 3em;
+  font-style: italic;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body p {
+  line-break: strict;
+  width: 100%;
 }
 
 form {
   text-align: center;
 }
 
-.log_data {
-  font-family: "Comic Sans MS";
+#log_data {
+  font-family: "Proxima Nova", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
   border-radius: 10px;
   position: fixed;
-  top: 45%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
-.send_button {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  overflow: hidden;
-  border-radius: 10px;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.enter_platform {
-  font-family: "Comic Sans MS";
-  font-size: 3em;
-  position: fixed;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-p {
-  line-break: strict;
-}
-
-input[type=text] {
-  font-family: "Comic Sans MS";
-  width: 400px;
-  height: 50px;
-  align-self: center;
+#log_data input[type=checkbox] {
+  font-family: "Proxima Nova", sans-serif;
   font-size: 2em;
-  border-radius: 3px;
-}
-
-input[type=password] {
-  font-family: "Comic Sans MS";
-  width: 400px;
-  height: 50px;
-  align-self: center;
-  font-size: 2em;
-  border-radius: 3px;
-}
-
-input[type=sumbit] {
-  font-family: "Comic Sans MS";
-  font-size: 2em;
+  width: auto;
+  cursor: pointer;
+  margin-right: 18px;
+  height: auto;
   color: inherit;
   border-radius: 3px;
-  background-color: blue;
+  background-color: #1963A8;
 }
-
-h1 {
+#log_data input[type=submit] {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
   text-align: center;
-}
-
-button {
-  font-family: "Comic Sans MS";
-  background: blue;
+  background: #1963A8;
   color: white;
-  font-size: 2em;
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 220px;
+  outline: none;
+  height: 50px;
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  margin-top: 150px;
+  overflow: hidden;
+  left: 50%;
+}
+#log_data input {
+  outline: none;
+  text-decoration: none;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  height: 60px;
+  align-self: center;
+  box-sizing: border-box;
+  font-size: 1.8em;
+  padding: 20px;
+  border: 3px solid #D0D0D0;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=login.css.map */

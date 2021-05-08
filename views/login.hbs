@@ -2,22 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Хакатон</title>
     <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
-<h1 class="enter_platform"><b>Вход на платформу</b></h1>
-<div class="container">
-    <form action="" class="form_block">
-        <div class="log_data">
-            <input type="text" name="log" placeholder="login"/><Br>
-            <input type="password" name="pwd" id="pwd" placeholder="password"/>
-            <p><input type="checkbox" name="save_data" value="false" checked>Запомнить меня</p>
-        </div>
-    </form>
-</div>
-<button type="submit">Отправить</button>
-<script type="text/javascript" src="./public/jquery/jquery.min.js"></script>
+<h1 id="enter_platform">Вход на платформу</h1>
+<form action="">
+    <div id="log_data">
+        <input type="text" name="login" placeholder="Логин"/><br>
+        <input type="password" name="pass" placeholder="Пароль"/>
+        <p><input type="checkbox" name="remem" value="false">Запомнить меня</p>
+        <input type="submit" value="Войти"/>
+    </div>
+</form>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="/js/login.js"></script>
 </body>
 </html>

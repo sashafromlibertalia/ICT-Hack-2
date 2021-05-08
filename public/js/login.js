@@ -1,11 +1,3 @@
-$('#form_block').append('<script type="text/javascript" src="jquery.min.js"></' + 'script>');
-
-$(document).ready(function () {
-    $('#container form')
-        .append('<input type="text" name="log" value="" />')
-        .append('<input type="password" name="pwd" id="pwd" value="" />');
-});
-
 $(document).ready(function () {
     $('button').click(function () {
         $.ajax({
