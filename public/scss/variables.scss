@@ -1,4 +1,22 @@
+@font-face {
+  src: url("/public/assets/fonts/ProximaNova-Regular.woff") format('woff');
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+@font-face {
+  src: url("/public/assets/fonts/HelveticaNeue-Roman.woff") format('woff');
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
 $main-app-color: #1963A8;
 $black-text-color: #191E24;
 $up: #53F293l;
 $down: #FF1B51;
+$gray-unactive: #D0D0D0;
+
+$defaultCornerRadius: 3px;
+
+
+$proxima: 'Proxima Nova', sans-serif;
+$helvetica: 'Helvetica Neue', sans-serif;
