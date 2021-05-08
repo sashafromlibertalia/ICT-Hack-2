@@ -1,11 +1,12 @@
 let mongoose = require('mongoose')
 const {Schema, model} = require('mongoose')
-const uri = "mongodb+srv://Alex-admin:rv5MYz3GUrA22GJx@cluster0.idiu0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const uri = "mongodb+srv://Alex-admin:rv5MYz3GUrA22GJx@cluster0.idiu0.mongodb.net/ict-hack?retryWrites=true&w=majority"
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
 }
+const moment = require('moment')
 
 mongoose.connection.on("error", (err) => {
     console.error("Ошибка соединения:", err);
@@ -32,49 +33,45 @@ const companySchema = new Schema({
         ref: 'User',
         persons: []
     }
-
-
 })
 
 const userSchema = new Schema({
     name: {
         type: String,
-        required: true
     },
     surname: {
         type: String,
-        required: true
     },
-    email: {
-        type: String,
-        required: true
+    login: {
+        type: String
     },
     password: {
         type: String,
-        required: true
+        // required: true
     },
     isLoggedIn: {
         type: Boolean,
-        required: true
+        // required: true
     },
     isLeader: {
         type: Boolean,
-        required: true
+        // required: true
     },
     deadlines: {
         type: Number,
         default: 0,
-        required: true,
+        // required: true,
         tasks: {
             type: Schema.Types.ObjectId,
             ref: 'Company',
-            required: true,
+            // required: true,
             done_tasks: [],
             needed_tasks: [],
             expired_tasks: []
         },
         collection: 'users'
-    }
+    },
+    createdAt: moment().toDate()
 
 })
 
@@ -106,5 +103,5 @@ module.exports.uri = uri
 module.exports.options = options
 module.exports.disconnect = disconnect()
 module.exports.connectToDB = connectToDB()
-module.exports.USERS_DATA = mongoose.model("users", userSchema)
-module.exports.SESSION_DATA = mongoose.model("company", companySchema)
+module.exports.users = mongoose.model("users", userSchema)
+module.exports.company = mongoose.model("company", companySchema)

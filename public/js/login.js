@@ -1,14 +1,16 @@
-$(document).ready(function () {
-    $('button').click(function () {
-        $.ajax({
-            type: "POST",
-            url: "/bz2.html"
-        }).success(function (data) {
-            let $bz = $('#z input[name="log"]').detach().css('background-color', 'red');
-            let $bz2 = $('#z input[name="pwd"]').detach().css('background-color', 'red');
-            $('#z').empty().html(data)
-            $('#z input[name="log"]').replaceWith($bz);
-            $('#z input[name="pwd"]').replaceWith($bz2);
-        });
-    });
+$('form input[type=submit]').submit((e) => {
+    e.preventDefault()
+
+    let form = $(this),
+        url = form.attr('action');
+
+    $.ajax({
+        type: "POST",
+        dataType: 'json',
+        data: form.serialize(),
+        url: "/home",
+        success: function (data) {
+            console.log(data)
+        }
+    })
 });

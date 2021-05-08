@@ -16,12 +16,12 @@ db.connectToDB
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
-app.use(session({
-    secret : 'some secret key',
-    resave :false,
-    saveUninitialized: false
-}))
-app.use(varMiddleware)
+// app.use(session({
+//     secret: 'some secret key',
+//     resave: false,
+//     saveUninitialized: false
+// }))
+// app.use(varMiddleware)
 
 
 app.use('/', loginRoutes)
