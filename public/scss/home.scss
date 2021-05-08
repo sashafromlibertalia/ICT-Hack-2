@@ -1,0 +1,31 @@
+@import "variables";
+
+nav .nav-wrapper {
+  background: $main-app-color;
+}
+
+.brand-logo {
+  font-family: $helvetica;
+}
+
+li {
+  font-family: $helvetica;
+}
+
+.center {
+  color: $gray-unactive;
+  font-size: 20px;
+}
+
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
+  top: 100% !important;
+  border-radius: $defaultCornerRadius;
+  & li a {
+    color: $black-text-color;
+    font-family: $helvetica;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}

@@ -2,48 +2,49 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-    <link rel="stylesheet" href="style1.css">
-
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>{{title}}</title>
 </head>
 <body>
-
 <nav>
     <div class="nav-wrapper row">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="hide-on-med-and-down">
-            <li class="col s2"><a href="index1.html" class="center" style="color: azure"><b>Главная</b></a></li>
-            <li class="col s2"><a href="my_projects.html" class="center" style="white-space: nowrap">Мои проекты</a>
+            {{#if isHome}}
+                <li class="col s2"><a href="/home" class="center active" style="color: azure"><b>Главная</b></a></li>
+            {{else}}
+                <li class="col s2"><a href="/home" class="center" style="color: azure"><b>Главная</b></a></li>
+            {{/if}}
+            <li class="col s2"><a href="/my-projects" class="center" style="white-space: nowrap">Мои проекты</a></li>
+            <li class="col s2"><a href="/deadlines" class="center">Дедлайны</a></li>
+            <li class="col s2"><a href="/achievements" class="center">Достижения</a></li>
+            <li class="right col s1">
+                <a class="dropdown-trigger" data-target="dropdown_menu">
+                    <img src="/assets/ava.jpg"
+                         alt="Это ваше фото"
+                         class="circle responsive-img"
+                         width="50px"
+                         align="center"
+                         style="object-fit: cover; height: 50px">
+                    <i class="material-icons right" style="padding-left: 50px">arrow_drop_down</i>
+                    Меню
+                </a>
             </li>
-            <li class="col s2"><a href="deadlines.html" class="center">Дедлайны</a></li>
-            <li class="col s2"><a href="achievements.html" class="center">Достижения</a></li>
-
-            <!--Это всплывающее окно с фоткой. Как сделать короче - я в душе не ебу-->
-            <li class="right"><a class="dropdown-trigger" href="#!" data-target="dropdown_menu"><img src="picture.jpg"
-                                                                                                     alt="Это ваше фото"
-                                                                                                     class="circle responsive-img"
-                                                                                                     width="50"
-                                                                                                     height="50"
-                                                                                                     align="center"><i
-                    class="material-icons right">arrow_drop_down</i> Меню</a></li>
         </ul>
     </div>
 </nav>
-
-<!-- Я НЕ ЗНАЮ КАК ЭТО ЗАПУСТИТЬ, ТАМ НАДО В .JS что-то добавлять и тд - я не умею) -->
-
-<!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
+<ul id="dropdown_menu" class="dropdown-content">
+    <li><a href="/settings">Настройки</a></li>
     <li class="divider"></li>
-    <li><a href="#!">three</a></li>
+    <li><a href="/">Выход</a></li>
 </ul>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="/js/home.js"></script>
 </html>

@@ -34,7 +34,11 @@ router.post('/', async (req, res) => {
 })
 
 router.get('/', async (req, res) => {
-    await res.render('login')
+    // await res.render('login')
+    await res.render("home", {
+        isHome: true,
+        title: "Главная"
+    })
 })
 
 router.post('/home', async (req, res) => {
@@ -44,7 +48,8 @@ router.post('/home', async (req, res) => {
 
 router.get("/home", async(req, res) => {
     await res.render("home", {
-        isHome: true
+        isHome: true,
+        title: "Главная"
     })
 })
 

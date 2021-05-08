@@ -1,0 +1,39 @@
+@font-face {
+  src: url("/public/assets/fonts/ProximaNova-Regular.woff") format("woff");
+  font-family: "Proxima Nova", sans-serif;
+}
+@font-face {
+  src: url("/public/assets/fonts/HelveticaNeue-Roman.woff") format("woff");
+  font-family: "Helvetica Neue", sans-serif;
+}
+nav .nav-wrapper {
+  background: #1963A8;
+}
+
+.brand-logo {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+li {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.center {
+  color: #D0D0D0;
+  font-size: 20px;
+}
+
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
+  top: 100% !important;
+  border-radius: 3px;
+}
+.dropdown-content li a {
+  color: #191E24;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=home.css.map */
