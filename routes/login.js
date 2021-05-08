@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
                     surname: surnames[index],
                     createdAt: moment().toDate()
                 }).save(() => {
-                    console.log("Saved new user")
+                    console.log("Сохранил нового юзера")
                     res.redirect('/home')
                 })
             }
