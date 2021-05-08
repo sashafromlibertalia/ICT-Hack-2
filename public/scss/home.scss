@@ -41,14 +41,19 @@ li {
 
 #container {
   display: flex;
+  flex-wrap: wrap;
   position: absolute;
   left: 3%;
   right: 3%;
 
+
+  & #sec2 {
+    height: 500px;
+  }
+
   & section {
     width: 100%;
-    display: grid;
-    flex-direction: row;
+    margin-bottom: 50px;
 
     .title {
       display: flex;
@@ -86,6 +91,7 @@ li {
   width: 100%;
   margin-top: 15px;
   justify-content: space-between;
+
   .left {
     width: 25%;
     min-height: 180px;
@@ -96,7 +102,7 @@ li {
     & .card {
       width: $cardWidth;
       height: $cardHeight;
-      box-shadow: 0 0 16px #E6E6E6;
+      box-shadow: $defaultShadow;
       border-radius: $defaultCornerRadius + 4px;
 
       .card-wrapper {
@@ -127,13 +133,13 @@ li {
             width: 38px;
             height: 38px;
             padding: 4px;
-            display:table;
+            display: table;
             left: 0;
             background-size: cover;
 
             & span {
-              display:table-cell;
-              vertical-align:middle;
+              display: table-cell;
+              vertical-align: middle;
               width: 30px;
               height: 30px;
             }
@@ -162,12 +168,14 @@ li {
         .stats {
           height: 15%;
           display: flex;
+
           .arrow {
             //padding: 5px;
             height: 100%;
             width: 12px;
             margin: 0;
             display: block;
+
             & span {
               background-size: cover;
               width: 12px;
@@ -237,11 +245,141 @@ li {
       margin-top: 30px;
       transform: translateX(-50%);
       transition: 180ms $cubic all;
+
       &:hover {
         background: $main-app-color-hover;
       }
     }
 
   }
+
+
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .project {
+      width: $projectWidth;
+      height: $projectHeight;
+      box-shadow: $defaultShadow;
+      border-radius: $defaultCornerRadius + 4px;
+      cursor: pointer;
+
+      .project-wrapper {
+        padding: 35px;
+        height: 100%;
+        width: 100%;
+
+        .deadline-status {
+          width: 100%;
+          height: $projectDeadLineHeight;
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+
+          .deadline-container {
+            display: flex;
+            justify-content: flex-start;
+            .deadline-img-container {
+              width: $projectDeadLineHeight / 2;
+              height: $projectDeadLineHeight;
+              display: flex;
+              background-size: cover;
+              justify-content: left;
+              align-items: center;
+              text-align: left;
+              & span {
+                width: $projectDeadLineHeight / 2;
+                height: $projectDeadLineHeight;
+                background-size: cover;
+              }
+            }
+
+            & h3 {
+              font-weight: bolder;
+              font-family: $proxima;
+              font-size: 20px;
+              margin: 0;
+              color: $down;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              text-align: left;
+              font-style: italic;
+              margin-left: 10px;
+            }
+
+          }
+
+          .admin-container {
+            display: flex;
+            justify-content: flex-start;
+            & h4 {
+              font-weight: bolder;
+              font-family: $proxima;
+              font-size: 20px;
+              margin: 0;
+              color: $main-app-color;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              text-align: left;
+              font-style: italic;
+              margin-left: 10px;
+            }
+
+            .admin-img-container {
+              height: $projectDeadLineHeight;
+              width: $projectDeadLineHeight;
+              display: flex;
+              background-size: cover;
+              justify-content: left;
+              align-items: center;
+              text-align: left;
+              & span {
+                width: $projectDeadLineHeight;
+                height: $projectDeadLineHeight;
+                background-size: cover;
+              }
+            }
+          }
+        }
+
+        .project-header {
+          margin: 0;
+          margin-top: 10px;
+          max-width: 60%;
+          & h1 {
+            margin: 0;
+            font-family: $proxima;
+            font-weight: bold;
+            font-size: 44px;
+            color: $black-text-color;
+          }
+        }
+
+        .project-description {
+          margin: 0;
+          margin-top: 15px;
+          max-width: 75%;
+            & p {
+              margin: 0;
+              font-family: $helvetica;
+              font-weight: normal;
+              font-size: 18px;
+              color: $black-text-secondary;
+            }
+        }
+      }
+    }
+  }
 }
 
+.circle {
+  &:before {
+    content: ' \25CF';
+    font-size: 15px;
+  }
+}

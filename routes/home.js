@@ -41,6 +41,39 @@ let cards = [
         stat_info: "",
         stat_text: "..."
     }]
+let projects = [
+        {
+            date: "9 мая 2021",
+            icon: "url(/assets/projects-icons/today.svg)",
+            header: "Платформа для хакатона",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis non feugiat interdum blandit turpis. At pellentesque enim metus, ornare tortor nisl pellentesque id tristique.",
+            progress: "55%",
+            tags: [{
+                title: "ИТМО",
+                color: "linear-gradient(180deg, #45DDF1 0%, #36D99E 100%);"
+            }, {
+                title: "Программирование",
+                color: "linear-gradient(180deg, #F14583 0%, #D93636 100%);"
+            }],
+            isAdmin: false
+        },
+        {
+            date: "Выполнен",
+            icon: "circle",
+            header: "Кубик Рубика",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis non feugiat interdum blandit turpis. At pellentesque enim metus, ornare tortor nisl pellentesque id tristique.",
+            progress: "100%",
+            tags: [{
+                title: "ИТМО",
+                color: "linear-gradient(180deg, #45DDF1 0%, #36D99E 100%);"
+            }, {
+                title: "Лабы",
+                color: "linear-gradient(180deg, #4580F1 0%, #363DD9 100%);"
+            }],
+            isAdmin: true
+        }
+    ]
+
 
 function greeting() {
     let text = ""
@@ -77,7 +110,8 @@ router.get("/home", async (req, res) => {
         isHome: true,
         message: greeting(),
         title: "Главная",
-        cards: cards
+        cards: cards,
+        projects: projects
     })
 })
 module.exports = router

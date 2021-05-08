@@ -11,8 +11,11 @@ const app = express()
 const hbs = exphbs.create({
     layoutsDir: path.join(__dirname, 'views'),
     extname: 'hbs',
-    partialsDir: [path.join(__dirname + '/views/partials')]
+    partialsDir: [path.join(__dirname + '/views/partials')],
+    helpers: require('./hbs-helpers')
 })
+
+
 app.engine('hbs', hbs.engine)
 app.set('view engine', 'hbs')
 app.set('views', 'views')

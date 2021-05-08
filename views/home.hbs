@@ -14,9 +14,9 @@
 {{>navbar}}
 <h1 id="greeting-header">{{message}}</h1>
 <div id="container">
-    <section id="1">
+    <section id="sec1">
         <div class="title">
-            <h1>Обзор на</h1>
+            <h1>Обзор за</h1>
             <span>неделю</span>
         </div>
         <div class="left-right-wrapper">
@@ -38,7 +38,8 @@
                                     <span class="arrow">
                                     <span style="background-image: {{this.arrow}}"></span>
                                 </span>
-                                    <span class="arrow-text" style="color: {{this.stat_color}}">{{this.stat_info}}</span>
+                                    <span class="arrow-text"
+                                          style="color: {{this.stat_color}}">{{this.stat_info}}</span>
                                 {{/if}}
                                 <span class="stats-text">{{this.stat_text}}</span>
                             </div>
@@ -53,11 +54,56 @@
             </div>
         </div>
     </section>
+    <section id="sec2">
+        <div class="title">
+            <h1>Недавние проекты</h1>
+        </div>
+        <div class="left-right-wrapper">
+            <div class="projects">
+                {{#each projects}}
+                    <div class="project">
+                        <div class="project-wrapper">
+                            <div class="deadline-status">
+                                <div class="deadline-container">
+                                    {{#ifEquals this.icon "circle"}}
+                                        <div class="deadline-img-container circle" style="color: #53F293"></div>
+                                        <h3 style="color: #53F293">{{this.date}}</h3>
+                                    {{else}}
+                                        <div class="deadline-img-container">
+                                            <span style="background-image: {{this.icon}}"></span>
+                                        </div>
+                                        <h3 style="color: #FF1B51">{{this.date}}</h3>
+                                    {{/ifEquals}}
+                                </div>
+                                {{#if this.isAdmin}}
+                                    <div class="admin-container">
+                                        <div class="admin-img-container">
+                                            <span style="background-image: url(/assets/projects-icons/owner.svg)"></span>
+                                        </div>
+                                        <h4>Руководитель</h4>
+                                    </div>
+                                {{/if}}
+                            </div>
+                            <div class="project-header">
+                                <h1>{{this.header}}</h1>
+                            </div>
+                            <div class="project-description">
+                                <p>{{this.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    <br/>
+    <br/>
 </div>
 {{>dropdown}}
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>.
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+.
 <script src="/js/home.js"></script>
 </html>

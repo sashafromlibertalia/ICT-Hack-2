@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url("/public/assets/fonts/ProximaNova-Regular.woff") format("woff");
   font-family: "Proxima Nova", sans-serif;
@@ -46,14 +47,17 @@ li {
 
 #container {
   display: flex;
+  flex-wrap: wrap;
   position: absolute;
   left: 3%;
   right: 3%;
 }
+#container #sec2 {
+  height: 500px;
+}
 #container section {
   width: 100%;
-  display: grid;
-  flex-direction: row;
+  margin-bottom: 50px;
 }
 #container section .title {
   display: flex;
@@ -227,6 +231,122 @@ li {
 }
 .left-right-wrapper .right div:hover {
   background: #144C80;
+}
+.left-right-wrapper .projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.left-right-wrapper .projects .project {
+  width: 720px;
+  height: 380px;
+  box-shadow: 0 0 16px #E6E6E6;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.left-right-wrapper .projects .project .project-wrapper {
+  padding: 35px;
+  height: 100%;
+  width: 100%;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status {
+  width: 100%;
+  height: 24px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .deadline-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .deadline-container .deadline-img-container {
+  width: 12px;
+  height: 24px;
+  display: flex;
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .deadline-container .deadline-img-container span {
+  width: 12px;
+  height: 24px;
+  background-size: cover;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .deadline-container h3 {
+  font-weight: bolder;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #FF1B51;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  font-style: italic;
+  margin-left: 10px;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .admin-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .admin-container h4 {
+  font-weight: bolder;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #1963A8;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  font-style: italic;
+  margin-left: 10px;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .admin-container .admin-img-container {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .admin-container .admin-img-container span {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+.left-right-wrapper .projects .project .project-wrapper .project-header {
+  margin: 0;
+  margin-top: 10px;
+  max-width: 60%;
+}
+.left-right-wrapper .projects .project .project-wrapper .project-header h1 {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  color: #191E24;
+}
+.left-right-wrapper .projects .project .project-wrapper .project-description {
+  margin: 0;
+  margin-top: 15px;
+  max-width: 75%;
+}
+.left-right-wrapper .projects .project .project-wrapper .project-description p {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(25, 30, 36, 0.6);
+}
+
+.circle:before {
+  content: " ●";
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=home.css.map */

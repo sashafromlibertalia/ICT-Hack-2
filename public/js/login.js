@@ -1,9 +1,6 @@
 $('form input[type=submit]').submit((e) => {
     e.preventDefault()
-
-    let form = $(this),
-        url = form.attr('action');
-
+    let form = $(this)
     $.ajax({
         type: "POST",
         dataType: 'json',
