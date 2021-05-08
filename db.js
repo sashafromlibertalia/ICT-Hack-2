@@ -45,7 +45,7 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
-    email: {
+    login: {
         type: String,
         required: true
     },
@@ -74,8 +74,10 @@ const userSchema = new Schema({
             expired_tasks: []
         },
         collection: 'users'
+    },
+    createdAt: {
+        type: Date
     }
-
 })
 
 
@@ -106,5 +108,5 @@ module.exports.uri = uri
 module.exports.options = options
 module.exports.disconnect = disconnect()
 module.exports.connectToDB = connectToDB()
-module.exports.USERS_DATA = mongoose.model("users", userSchema)
-module.exports.SESSION_DATA = mongoose.model("company", companySchema)
+module.exports.users = mongoose.model("users", userSchema)
+module.exports.company = mongoose.model("company", companySchema)

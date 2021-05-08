@@ -7,14 +7,14 @@ let {Router} = require('express'),
 const names = ["Вася", "Олег", "Кизару", "Петька", "Эрик"]
 const surnames = ["Пупкин", "Непочелович", "Лох", "Иванов", "Клептон"]
 
-router.post('/', async (req, res) => {
+router.post('/', (req, res) => {
     let login = req.body.login,
         pass = req.body.pass,
         index = Math.floor(Math.random() * names.length)
-    await db.connectToDB.then(() => {
+    db.connectToDB.then(() => {
         User.find({
             login: login,
-            pass: pass
+            password: pass
         }, (err, result) => {
             if (err) console.error(err)
             if (result.length === 0) {
@@ -28,29 +28,20 @@ router.post('/', async (req, res) => {
                     console.log("Сохранил нового юзера")
                     res.redirect('/home')
                 })
+            } else {
+                console.log("Такой юзер есть")
+                res.redirect('/home')
             }
         })
     })
 })
 
 router.get('/', async (req, res) => {
-    // await res.render('login')
-    await res.render("home", {
-        isHome: true,
-        title: "Главная"
-    })
-})
-
-router.post('/home', async (req, res) => {
-    //req.session.isLogged = true;
-    await res.redirect('home')
-})
-
-router.get("/home", async(req, res) => {
-    await res.render("home", {
-        isHome: true,
-        title: "Главная"
-    })
+    await res.render('login')
+    // await res.render("home", {
+    //     isHome: true,
+    //     title: "Главная"
+    // })
 })
 
 module.exports = router
