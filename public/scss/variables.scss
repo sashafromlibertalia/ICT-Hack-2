@@ -10,6 +10,8 @@
 
 
 $main-app-color: #1963A8;
+$main-app-color-hover: #144C80;
+
 $black-text-color: #191E24;
 $up: #53F293;
 $down: #FF1B51;
@@ -21,6 +23,7 @@ $defaultCornerRadius: 3px;
 $proxima: 'Proxima Nova', sans-serif;
 $helvetica: 'Helvetica Neue', sans-serif;
 
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
 $cardWidth: 210px;
 $cardHeight: 180px;

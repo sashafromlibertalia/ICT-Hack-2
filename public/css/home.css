@@ -223,6 +223,10 @@ li {
   position: relative;
   margin-top: 30px;
   transform: translateX(-50%);
+  transition: 180ms cubic-bezier(0.4, 0.01, 0.165, 0.99) all;
+}
+.left-right-wrapper .right div:hover {
+  background: #144C80;
 }
 
 /*# sourceMappingURL=home.css.map */
