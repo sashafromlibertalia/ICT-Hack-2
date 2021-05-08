@@ -36,4 +36,63 @@ li {
   font-weight: bold;
 }
 
+#greeting-header {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  margin-left: 3%;
+}
+
+#container {
+  display: flex;
+  position: absolute;
+  left: 3%;
+  right: 3%;
+}
+#container section {
+  width: 100%;
+  display: grid;
+  flex-direction: row;
+}
+#container section .title {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0;
+  align-items: center;
+}
+#container section .title h1 {
+  font-family: "Proxima Nova", sans-serif;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #191E24;
+}
+#container section .title span {
+  font-family: "Proxima Nova", sans-serif;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 8px;
+  font-style: italic;
+  text-align: center;
+  color: #1963A8;
+}
+
+.left {
+  width: 45%;
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.left .card {
+  width: 210px;
+  height: 180px;
+  background: beige;
+}
+
 /*# sourceMappingURL=home.css.map */

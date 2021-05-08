@@ -22,10 +22,73 @@ li {
   height: auto !important;
   top: 100% !important;
   border-radius: $defaultCornerRadius;
+
   & li a {
     color: $black-text-color;
     font-family: $helvetica;
     font-size: 15px;
     font-weight: bold;
+  }
+}
+
+#greeting-header {
+  font-family: $helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  margin-left: 3%;
+}
+
+#container {
+  display: flex;
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  & section {
+    width: 100%;
+    display: grid;
+    flex-direction: row;
+
+    .title {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      margin: 0;
+      align-items: center;
+      & h1 {
+        font-family: $proxima;
+        margin: 0;
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: $black-text-color;
+      }
+
+      & span {
+        font-family: $proxima;
+        margin: 0;
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 8px;
+        font-style: italic;
+        text-align: center;
+        color: $main-app-color;
+      }
+    }
+  }
+}
+
+.left {
+  width: 45%;
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & .card {
+    width: $cardWidth;
+    height: $cardHeight;
+    background: beige;
   }
 }

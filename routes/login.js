@@ -6,6 +6,32 @@ let {Router} = require('express'),
 
 const names = ["Вася", "Олег", "Кизару", "Петька", "Эрик"]
 const surnames = ["Пупкин", "Непочелович", "Лох", "Иванов", "Клептон"]
+const Time = new Date()
+
+function greeting() {
+    let text = ""
+    for (j = 0; j < 6; j++) {
+        if (Time.getHours() === j) {
+            text = "Доброй ночи, "
+        }
+    }
+    for (j = 6; j < 12; j++) {
+        if (Time.getHours() === j) {
+            text = "Доброе утро, "
+        }
+    }
+    for (j = 12; j < 18; j++) {
+        if (Time.getHours() === j) {
+            text = "Добрый день, "
+        }
+    }
+    for (j = 18; j < 24; j++) {
+        if (Time.getHours() === j) {
+            text = "Добрый вечер, "
+        }
+    }
+    return text
+}
 
 router.post('/', (req, res) => {
     let login = req.body.login,
@@ -37,11 +63,12 @@ router.post('/', (req, res) => {
 })
 
 router.get('/', async (req, res) => {
-    await res.render('login')
-    // await res.render("home", {
-    //     isHome: true,
-    //     title: "Главная"
-    // })
+    //await res.render('login')
+    await res.render("home", {
+        isHome: true,
+        message: greeting() ,
+        title: "Главная"
+    })
 })
 
 module.exports = router
