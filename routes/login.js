@@ -1,7 +1,8 @@
 let {Router} = require('express'),
     router = Router(),
     db = require('../db'),
-    User = db.users
+    User = db.users,
+    moment = require('moment')
 
 const names = ["Вася", "Олег", "Кизару", "Петька", "Эрик"]
 const surnames = ["Пупкин", "Непочелович", "Лох", "Иванов", "Клептон"]
@@ -10,7 +11,7 @@ router.post('/', async (req, res) => {
     let login = req.body.login,
         pass = req.body.pass,
         index = Math.floor(Math.random() * names.length)
-    db.connectToDB.then(() => {
+    await db.connectToDB.then(() => {
         User.find({
             login: login,
             pass: pass
@@ -21,7 +22,8 @@ router.post('/', async (req, res) => {
                     login: login,
                     password: pass,
                     name: names[index],
-                    surname: surnames[index]
+                    surname: surnames[index],
+                    createdAt: moment().toDate()
                 }).save(() => {
                     console.log("Saved new user")
                     res.redirect('/home')
@@ -32,12 +34,18 @@ router.post('/', async (req, res) => {
 })
 
 router.get('/', async (req, res) => {
-    res.render('login')
+    await res.render('login')
 })
 
 router.post('/home', async (req, res) => {
     //req.session.isLogged = true;
-    res.redirect('home')
+    await res.redirect('home')
+})
+
+router.get("/home", async(req, res) => {
+    await res.render("home", {
+        isHome: true
+    })
 })
 
 module.exports = router

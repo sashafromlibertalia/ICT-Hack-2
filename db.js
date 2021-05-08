@@ -6,7 +6,6 @@ const options = {
     useUnifiedTopology: true,
     useCreateIndex: true,
 }
-const moment = require('moment')
 
 mongoose.connection.on("error", (err) => {
     console.error("Ошибка соединения:", err);
@@ -71,7 +70,9 @@ const userSchema = new Schema({
         },
         collection: 'users'
     },
-    createdAt: moment().toDate()
+    createdAt: {
+        type: Date
+    }
 
 })
 
