@@ -1,16 +1,83 @@
 let mongoose = require('mongoose')
-
+const {Schema, model} = require('mongoose')
 const uri = "mongodb+srv://Alex-admin:rv5MYz3GUrA22GJx@cluster0.idiu0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
 }
-const Schema = mongoose.Schema;
-const db = mongoose.connection;
-db.on("error", (err) => {
+
+mongoose.connection.on("error", (err) => {
     console.error("Ошибка соединения:", err);
 });
+const companySchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    deadlines: {
+        type: Number,
+        default: 0,
+        required: true,
+        tasks: {
+            required: true,
+            needed_tasks: [],
+        }
+    },
+    isDone: {
+        type: Boolean,
+    },
+    users: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        persons: []
+    }
+
+
+})
+
+const userSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    surname: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    isLoggedIn: {
+        type: Boolean,
+        required: true
+    },
+    isLeader: {
+        type: Boolean,
+        required: true
+    },
+    deadlines: {
+        type: Number,
+        default: 0,
+        required: true,
+        tasks: {
+            type: Schema.Types.ObjectId,
+            ref: 'Company',
+            required: true,
+            done_tasks: [],
+            needed_tasks: [],
+            expired_tasks: []
+        },
+        collection: 'users'
+    }
+
+})
+
 
 function connectToDB() {
     if (mongoose.connection.readyState === 0) {
@@ -39,3 +106,5 @@ module.exports.uri = uri
 module.exports.options = options
 module.exports.disconnect = disconnect()
 module.exports.connectToDB = connectToDB()
+module.exports.USERS_DATA = mongoose.model("users", userSchema)
+module.exports.SESSION_DATA = mongoose.model("company", companySchema)
