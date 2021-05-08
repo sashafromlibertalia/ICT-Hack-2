@@ -11,38 +11,8 @@
     <title>{{title}}</title>
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper row">
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="hide-on-med-and-down">
-            {{#if isHome}}
-                <li class="col s2"><a href="/home" class="center active" style="color: azure"><b>Главная</b></a></li>
-            {{else}}
-                <li class="col s2"><a href="/home" class="center" style="color: azure"><b>Главная</b></a></li>
-            {{/if}}
-            <li class="col s2"><a href="/my-projects" class="center" style="white-space: nowrap">Мои проекты</a></li>
-            <li class="col s2"><a href="/deadlines" class="center">Дедлайны</a></li>
-            <li class="col s2"><a href="/achievements" class="center">Достижения</a></li>
-            <li class="right col s1">
-                <a class="dropdown-trigger" data-target="dropdown_menu">
-                    <img src="/assets/ava.jpg"
-                         alt="Это ваше фото"
-                         class="circle responsive-img"
-                         width="50px"
-                         align="center"
-                         style="object-fit: cover; height: 50px">
-                    <i class="material-icons right" style="padding-left: 50px">arrow_drop_down</i>
-                    Меню
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<ul id="dropdown_menu" class="dropdown-content">
-    <li><a href="/settings">Настройки</a></li>
-    <li class="divider"></li>
-    <li><a href="/">Выход</a></li>
-</ul>
+{{>navbar}}
+{{>dropdown}}
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

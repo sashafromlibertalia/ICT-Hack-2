@@ -1,32 +1,40 @@
 <nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Приложение курсов</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <div class="nav-wrapper row">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+            {{#if isHome}}
+                <li class="col s2 active"><a href="/home" class="center" style="color: azure"><b>Главная</b></a></li>
+            {{else}}
+                <li class="col s2"><a href="/home" class="center" style="color: azure"><b>Главная</b></a></li>
+            {{/if}}
+            {{#if isProjects}}
+                <li class="col s2 active"><a href="/my-projects" class="center" style="white-space: nowrap">Мои проекты</a></li>
+            {{else}}
+                <li class="col s2"><a href="/my-projects" class="center" style="white-space: nowrap">Мои проекты</a></li>
+            {{/if}}
+            {{#if isDeadlines}}
+                <li class="col s2 active"><a href="/deadlines" class="center">Дедлайны</a></li>
+            {{else}}
+                <li class="col s2"><a href="/deadlines" class="center">Дедлайны</a></li>
+            {{/if}}
 
-      {{#if isHome}}
-        <li class="active"><a href="/home">Главная</a></li>
-      {{else}}
-        <li><a href="/">Главная</a></li>
-      {{/if}}
-
-      {{#if isCourses}}
-        <li class="active"><a href="/courses">Курсы</a></li>
-      {{else}}
-        <li><a href="/courses">Курсы</a></li>
-      {{/if}}
-
-      {{#if isAdd}}
-        <li class="active"><a href="/add">Добавить курс</a></li>
-      {{else}}
-        <li><a href="/add">Добавить курс</a></li>
-      {{/if}}
-
-        {{#if isCard}}
-            <li class="active"><a href="/card">Корзина</a></li>
-        {{else}}
-            <li><a href="/card">Корзина</a></li>
-        {{/if}}
-
-    </ul>
-  </div>
+            {{#if isGoals}}
+                <li class="col s2 active"><a href="/achievements" class="center">Достижения</a></li>
+            {{else}}
+                <li class="col s2"><a href="/achievements" class="center">Достижения</a></li>
+            {{/if}}
+            <li class="right col s1">
+                <a class="dropdown-trigger" data-target="dropdown_menu">
+                    <img src="/assets/ava.jpg"
+                         alt="Это ваше фото"
+                         class="circle responsive-img"
+                         width="50px"
+                         align="center"
+                         style="object-fit: cover; height: 50px">
+                    <i class="material-icons right" style="padding-left: 50px">arrow_drop_down</i>
+                    Меню
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
