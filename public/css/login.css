@@ -16,7 +16,7 @@ body {
 body h1 {
   text-align: center;
   font-family: "Proxima Nova", sans-serif;
-  font-size: 3em;
+  font-size: 2.7em;
   font-style: italic;
   position: fixed;
   top: 15%;
@@ -40,6 +40,7 @@ form {
   overflow: hidden;
   border-radius: 10px;
   position: fixed;
+  margin-top: 50px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -80,7 +81,7 @@ form {
   text-decoration: none;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 400;
-  height: 60px;
+  height: 30px;
   align-self: center;
   box-sizing: border-box;
   font-size: 1.8em;
