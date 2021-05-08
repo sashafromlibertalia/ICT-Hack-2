@@ -63,12 +63,12 @@ router.post('/', (req, res) => {
 })
 
 router.get('/', async (req, res) => {
-    //await res.render('login')
-    await res.render("home", {
-        isHome: true,
-        message: greeting() ,
-        title: "Главная"
-    })
+    await res.render('login')
+    // await res.render("home", {
+    //     isHome: true,
+    //     message: greeting() ,
+    //     title: "Главная"
+    // })
 })
 
 module.exports = router

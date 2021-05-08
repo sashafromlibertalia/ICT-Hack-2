@@ -19,34 +19,38 @@
             <h1>Обзор на</h1>
             <span>неделю</span>
         </div>
-        <div class="left">
-            {{#each cards}}
-                <div class="card">
-                    <div class="card-wrapper">
-                        <div class="card-header">
-                            <div class="img-container">
-                                <span style="background-image: {{this.header_img}}"></span>
+        <div class="left-right-wrapper">
+            <div class="left">
+                {{#each cards}}
+                    <div class="card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <div class="img-container">
+                                    <span style="background-image: {{this.header_img}}"></span>
+                                </div>
+                                <h1>{{this.header}}</h1>
                             </div>
-                            <h1>{{this.header}}</h1>
-                        </div>
-                        <div class="text">
-                            <h1>{{this.text}}</h1>
-                        </div>
-                        <div class="stats">
-                            {{#if this.stat_color}}
-                                <span class="arrow">
+                            <div class="text">
+                                <h1>{{this.text}}</h1>
+                            </div>
+                            <div class="stats">
+                                {{#if this.stat_color}}
+                                    <span class="arrow">
                                     <span style="background-image: {{this.arrow}}"></span>
                                 </span>
-                                <span class="arrow-text" style="color: {{this.stat_color}}">{{this.stat_info}}</span>
-                            {{/if}}
-                            <span class="stats-text">{{this.stat_text}}</span>
+                                    <span class="arrow-text" style="color: {{this.stat_color}}">{{this.stat_info}}</span>
+                                {{/if}}
+                                <span class="stats-text">{{this.stat_text}}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            {{/each}}
-        </div>
-        <div class="right">
-
+                {{/each}}
+            </div>
+            <div class="right">
+                <h1>Статистика по выполненным задачам</h1>
+                <canvas id="graph"></canvas>
+                <div id="otherStat">Прочая статистика</div>
+            </div>
         </div>
     </section>
 </div>
@@ -54,5 +58,6 @@
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>.
 <script src="/js/home.js"></script>
 </html>
