@@ -90,18 +90,28 @@
                             <div class="project-description">
                                 <p>{{this.description}}</p>
                             </div>
-                            <div class="project-progress-tags">
-                                <div class="progress-container">
-                                    <div class="line-container">
-                                        <div class="progress-bar">
-                                            <span class="prog-line" style="background-color: {{this.progress.color}}; width:  {{this.progress.value}}">
+                            <div class="bottom-cont">
+                                <div class="project-progress-tags">
+                                    <div class="progress-container">
+                                        <div class="line-container">
+                                            <div class="progress-bar">
+                                            <span class="prog-line"
+                                                  style="background-color: {{this.progress.color}}; width:  {{this.progress.value}}">
                                             </span>
-                                            <span class="progress-circle" style="color: {{this.progress.color}}; margin-left: -10px;"></span>
+                                                <span class="progress-circle"
+                                                      style="color: {{this.progress.color}}; margin-left: -5px;"></span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <h5>{{this.progress.value}}</h5>
+                                    <div class="tags-container">
+                                        {{#each this.tags}}
+                                            <div class="tag" style="background: {{this.color}}">
+                                                <p>{{this.title}}</p>
+                                            </div>
+                                        {{/each}}
+                                    </div>
                                 </div>
-                                <div class="tags-container"></div>
+                                <h5>{{this.progress.value}}</h5>
                             </div>
                         </div>
                     </div>

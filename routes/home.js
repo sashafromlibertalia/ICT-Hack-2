@@ -49,7 +49,7 @@ let projects = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis non feugiat interdum blandit turpis. At pellentesque enim metus, ornare tortor nisl pellentesque id tristique.",
         progress: {
             value: "55%",
-            color: "#vFFD707"
+            color: "#FFD707"
         },
         tags: [{
             title: "ИТМО",

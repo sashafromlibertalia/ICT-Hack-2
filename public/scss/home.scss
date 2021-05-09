@@ -269,7 +269,7 @@ li {
       position: relative;
 
       .project-wrapper {
-        padding: 35px;
+        padding: $projectPadding;
         height: 100%;
         width: 100%;
 
@@ -380,47 +380,81 @@ li {
           }
         }
 
-        .project-progress-tags {
-          width: 100%;
-          height: $projectTagsLineHeight;
-          margin: 0;
+        .bottom-cont {
           position: absolute;
-          bottom: 35px;
-          display: flex;
-          justify-content: space-between;
+          bottom: $projectPadding;
+          width: $projectWidth - 2 * $projectPadding;
 
-          .progress-container {
-            .line-container {
-              display: block;
+          .project-progress-tags {
+            width: 100%;
+            height: $projectTagsLineHeight;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
 
-              .progress-bar {
-                width: 180px;
-                height: 10px;
-                border-radius: 50px;
-                background-color: $hover;
-                display: flex;
-                align-items: center;
+            .progress-container {
+              align-items: flex-end;
+              display: flex;
 
-                .prog-line {
-                  display: block;
+              .line-container {
+                display: block;
+
+                .progress-bar {
+                  width: 180px;
+                  height: 10px;
                   border-radius: 50px;
-                  height: 100%;
-                }
+                  background-color: $hover;
+                  display: flex;
+                  align-items: center;
 
-                .progress-circle:before {
-                  content: '\25CF';
-                  font-size: 25px;
+                  .prog-line {
+                    display: block;
+                    border-radius: 50px;
+                    height: 100%;
+                  }
+
+                  .progress-circle:before {
+                    content: '\25CF';
+                    font-size: 25px;
+                  }
                 }
               }
             }
 
-            & h5 {
-              color: $gray-unactive;
-              font-family: $proxima;
-              font-weight: bold;
-              font-size: 16px;
-              margin: 10px 0 0 0;
+            .tags-container {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap-reverse;
+
+              .tag {
+                width: auto;
+                border-radius: $defaultCornerRadius;
+                height: 100%;
+                margin-left: 20px;
+                padding: 15px;
+                display: flex;
+
+                & p {
+                  font-family: $helvetica;
+                  font-weight: bold;
+                  color: white;
+                  margin: 0;
+                  display: flex;
+                  justify-content: left;
+                  align-items: center;
+                  text-align: center;
+                  font-size: 15px;
+                }
+              }
             }
+          }
+
+          & h5 {
+            color: $gray-unactive;
+            font-family: $proxima;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px 0 0 0;
           }
         }
       }
