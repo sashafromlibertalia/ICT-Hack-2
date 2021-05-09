@@ -7,8 +7,8 @@
 
 import SwiftUI
 let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
-let storedUsername = "admin"
-let storedPassword = "admin"
+let storedUsername = ""
+let storedPassword = ""
 
 struct loginPage: View {
     @EnvironmentObject var viewRouter: ViewRouter
@@ -109,7 +109,8 @@ struct loginButtonContent: View {
             .frame(width: 220, height: 60)
             .background(Color(red: 25 / 255, green: 99 / 255, blue: 168 / 255, opacity: 1))
             .cornerRadius(15.0)
-            .animation(Animation.default)
+            .shadow(color: Color.black.opacity(0.4), radius: 20, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 10)
+            .shadow(color: Color.black.opacity(0.4), radius: 5, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 5)
     }
 }
 

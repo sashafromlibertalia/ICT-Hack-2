@@ -11,13 +11,14 @@
 		D10839B426474F030032D4B9 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10839B326474F030032D4B9 /* MotherView.swift */; };
 		D10839B626474F070032D4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10839B526474F070032D4B9 /* Assets.xcassets */; };
 		D10839B926474F070032D4B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10839B826474F070032D4B9 /* Preview Assets.xcassets */; };
+		D13F113F2647DB66009B0E03 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F113E2647DB66009B0E03 /* TabBar.swift */; };
+		D13F11472647DE36009B0E03 /* generalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F11462647DE36009B0E03 /* generalPage.swift */; };
+		D13F11492647DFFE009B0E03 /* myTeamPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F11482647DFFE009B0E03 /* myTeamPage.swift */; };
+		D13F114B2647E24B009B0E03 /* deadlinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F114A2647E24B009B0E03 /* deadlinePage.swift */; };
+		D13F114D2647E2D3009B0E03 /* profilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F114C2647E2D3009B0E03 /* profilePage.swift */; };
 		D1DD68D626477B08007364E1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD68D526477B08007364E1 /* Helper.swift */; };
 		D1DD68D826477BD5007364E1 /* loginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD68D726477BD5007364E1 /* loginPage.swift */; };
-		D1DD68DA26477C40007364E1 /* generalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD68D926477C40007364E1 /* generalPage.swift */; };
 		D1DD68DC26477F68007364E1 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD68DB26477F68007364E1 /* ViewRouter.swift */; };
-		D1DD68DE26478956007364E1 /* myTeamPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD68DD26478955007364E1 /* myTeamPage.swift */; };
-		D1DD68E02647897D007364E1 /* deadlinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD68DF2647897D007364E1 /* deadlinePage.swift */; };
-		D1DD68E226478990007364E1 /* profilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD68E126478990007364E1 /* profilePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +28,14 @@
 		D10839B526474F070032D4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D10839B826474F070032D4B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D10839BA26474F070032D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13F113E2647DB66009B0E03 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D13F11462647DE36009B0E03 /* generalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = generalPage.swift; path = ProView/TabView/generalPage.swift; sourceTree = SOURCE_ROOT; };
+		D13F11482647DFFE009B0E03 /* myTeamPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTeamPage.swift; sourceTree = "<group>"; };
+		D13F114A2647E24B009B0E03 /* deadlinePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deadlinePage.swift; sourceTree = "<group>"; };
+		D13F114C2647E2D3009B0E03 /* profilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePage.swift; sourceTree = "<group>"; };
 		D1DD68D526477B08007364E1 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		D1DD68D726477BD5007364E1 /* loginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPage.swift; sourceTree = "<group>"; };
-		D1DD68D926477C40007364E1 /* generalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generalPage.swift; sourceTree = "<group>"; };
 		D1DD68DB26477F68007364E1 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
-		D1DD68DD26478955007364E1 /* myTeamPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTeamPage.swift; sourceTree = "<group>"; };
-		D1DD68DF2647897D007364E1 /* deadlinePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deadlinePage.swift; sourceTree = "<group>"; };
-		D1DD68E126478990007364E1 /* profilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +69,15 @@
 			isa = PBXGroup;
 			children = (
 				D10839B126474F030032D4B9 /* ProViewApp.swift */,
+				D13F114E2647E6B4009B0E03 /* TabView */,
 				D1DD68D526477B08007364E1 /* Helper.swift */,
-				D1DD68E126478990007364E1 /* profilePage.swift */,
-				D1DD68DF2647897D007364E1 /* deadlinePage.swift */,
 				D10839B326474F030032D4B9 /* MotherView.swift */,
-				D1DD68DD26478955007364E1 /* myTeamPage.swift */,
 				D1DD68DB26477F68007364E1 /* ViewRouter.swift */,
-				D1DD68D926477C40007364E1 /* generalPage.swift */,
 				D1DD68D726477BD5007364E1 /* loginPage.swift */,
 				D10839B526474F070032D4B9 /* Assets.xcassets */,
 				D10839BA26474F070032D4B9 /* Info.plist */,
 				D10839B726474F070032D4B9 /* Preview Content */,
+				D13F113E2647DB66009B0E03 /* TabBar.swift */,
 			);
 			path = ProView;
 			sourceTree = "<group>";
@@ -88,6 +88,17 @@
 				D10839B826474F070032D4B9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D13F114E2647E6B4009B0E03 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				D13F11462647DE36009B0E03 /* generalPage.swift */,
+				D13F11482647DFFE009B0E03 /* myTeamPage.swift */,
+				D13F114A2647E24B009B0E03 /* deadlinePage.swift */,
+				D13F114C2647E2D3009B0E03 /* profilePage.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,15 +170,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DD68E02647897D007364E1 /* deadlinePage.swift in Sources */,
 				D1DD68D826477BD5007364E1 /* loginPage.swift in Sources */,
+				D13F11472647DE36009B0E03 /* generalPage.swift in Sources */,
+				D13F114D2647E2D3009B0E03 /* profilePage.swift in Sources */,
 				D10839B426474F030032D4B9 /* MotherView.swift in Sources */,
-				D1DD68DE26478956007364E1 /* myTeamPage.swift in Sources */,
+				D13F114B2647E24B009B0E03 /* deadlinePage.swift in Sources */,
 				D10839B226474F030032D4B9 /* ProViewApp.swift in Sources */,
+				D13F11492647DFFE009B0E03 /* myTeamPage.swift in Sources */,
 				D1DD68DC26477F68007364E1 /* ViewRouter.swift in Sources */,
-				D1DD68DA26477C40007364E1 /* generalPage.swift in Sources */,
-				D1DD68E226478990007364E1 /* profilePage.swift in Sources */,
 				D1DD68D626477B08007364E1 /* Helper.swift in Sources */,
+				D13F113F2647DB66009B0E03 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

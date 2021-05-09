@@ -7,20 +7,16 @@ struct MotherView: View {
         case .loginPage:
             loginPage()
         case .generalPage:
-            generalPage()
+            TabBar()
                 .transition(.scale)
-        case .myTeamPage:
-            myTeamPage()
-        case .deadlinePage:
-            deadlinePage()
-        case .profilePage:
-            profilePage()
         }
     }
 }
 
 struct MotherView_Previews: PreviewProvider {
     static var previews: some View {
-        MotherView().environmentObject(ViewRouter())
+        Group {
+            MotherView().environmentObject(ViewRouter())
+        }
     }
 }

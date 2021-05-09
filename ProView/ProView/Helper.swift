@@ -9,7 +9,4 @@ import Foundation
 enum Page {
     case loginPage
     case generalPage
-    case myTeamPage
-    case deadlinePage
-    case profilePage
 }
