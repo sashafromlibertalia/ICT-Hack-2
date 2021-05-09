@@ -90,6 +90,19 @@
                             <div class="project-description">
                                 <p>{{this.description}}</p>
                             </div>
+                            <div class="project-progress-tags">
+                                <div class="progress-container">
+                                    <div class="line-container">
+                                        <div class="progress-bar">
+                                            <span class="prog-line" style="background-color: {{this.progress.color}}; width:  {{this.progress.value}}">
+                                            </span>
+                                            <span class="progress-circle" style="color: {{this.progress.color}}; margin-left: -10px;"></span>
+                                        </div>
+                                    </div>
+                                    <h5>{{this.progress.value}}</h5>
+                                </div>
+                                <div class="tags-container"></div>
+                            </div>
                         </div>
                     </div>
                 {{/each}}

@@ -266,6 +266,7 @@ li {
       box-shadow: $defaultShadow;
       border-radius: $defaultCornerRadius + 4px;
       cursor: pointer;
+      position: relative;
 
       .project-wrapper {
         padding: 35px;
@@ -282,6 +283,7 @@ li {
           .deadline-container {
             display: flex;
             justify-content: flex-start;
+
             .deadline-img-container {
               width: $projectDeadLineHeight / 2;
               height: $projectDeadLineHeight;
@@ -290,6 +292,7 @@ li {
               justify-content: left;
               align-items: center;
               text-align: left;
+
               & span {
                 width: $projectDeadLineHeight / 2;
                 height: $projectDeadLineHeight;
@@ -316,6 +319,7 @@ li {
           .admin-container {
             display: flex;
             justify-content: flex-start;
+
             & h4 {
               font-weight: bolder;
               font-family: $proxima;
@@ -338,6 +342,7 @@ li {
               justify-content: left;
               align-items: center;
               text-align: left;
+
               & span {
                 width: $projectDeadLineHeight;
                 height: $projectDeadLineHeight;
@@ -351,6 +356,7 @@ li {
           margin: 0;
           margin-top: 10px;
           max-width: 60%;
+
           & h1 {
             margin: 0;
             font-family: $proxima;
@@ -364,13 +370,58 @@ li {
           margin: 0;
           margin-top: 15px;
           max-width: 75%;
-            & p {
-              margin: 0;
-              font-family: $helvetica;
-              font-weight: normal;
-              font-size: 18px;
-              color: $black-text-secondary;
+
+          & p {
+            margin: 0;
+            font-family: $helvetica;
+            font-weight: normal;
+            font-size: 18px;
+            color: $black-text-secondary;
+          }
+        }
+
+        .project-progress-tags {
+          width: 100%;
+          height: $projectTagsLineHeight;
+          margin: 0;
+          position: absolute;
+          bottom: 35px;
+          display: flex;
+          justify-content: space-between;
+
+          .progress-container {
+            .line-container {
+              display: block;
+
+              .progress-bar {
+                width: 180px;
+                height: 10px;
+                border-radius: 50px;
+                background-color: $hover;
+                display: flex;
+                align-items: center;
+
+                .prog-line {
+                  display: block;
+                  border-radius: 50px;
+                  height: 100%;
+                }
+
+                .progress-circle:before {
+                  content: '\25CF';
+                  font-size: 25px;
+                }
+              }
             }
+
+            & h5 {
+              color: $gray-unactive;
+              font-family: $proxima;
+              font-weight: bold;
+              font-size: 16px;
+              margin: 10px 0 0 0;
+            }
+          }
         }
       }
     }
