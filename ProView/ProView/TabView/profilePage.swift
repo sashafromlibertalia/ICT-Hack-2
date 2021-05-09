@@ -46,7 +46,7 @@ struct profilePage: View {
                 ZStack {
                     Color(red: 252 / 255, green: 253 / 255, blue: 1, opacity: 1).edgesIgnoringSafeArea(.all)
                     VStack {
-                        Text ("Рзабираюсь в")
+                        Text ("Разбираюсь в")
                             .font(.title)
                             .fontWeight(.bold)
                             .padding()
