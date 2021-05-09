@@ -7,31 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D101CE662646AF4800CF7FEA /* GeneralPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D101CE652646AF4700CF7FEA /* GeneralPage.swift */; };
-		D101CE682646BA5800CF7FEA /* productivityWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D101CE672646BA5800CF7FEA /* productivityWidgets.swift */; };
-		D19861482645906000EA617F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19861472645906000EA617F /* AppDelegate.swift */; };
-		D198614A2645906000EA617F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19861492645906000EA617F /* SceneDelegate.swift */; };
-		D198614C2645906000EA617F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198614B2645906000EA617F /* ViewController.swift */; };
-		D198614F2645906000EA617F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D198614D2645906000EA617F /* Main.storyboard */; };
-		D19861512645906200EA617F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19861502645906200EA617F /* Assets.xcassets */; };
-		D19861542645906200EA617F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19861522645906200EA617F /* LaunchScreen.storyboard */; };
+		D1F56B502646ECA200A63499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F56B4F2646ECA200A63499 /* AppDelegate.swift */; };
+		D1F56B522646ECA200A63499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F56B512646ECA200A63499 /* SceneDelegate.swift */; };
+		D1F56B542646ECA200A63499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F56B532646ECA200A63499 /* ViewController.swift */; };
+		D1F56B572646ECA200A63499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F56B552646ECA200A63499 /* Main.storyboard */; };
+		D1F56B592646ECA500A63499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F56B582646ECA500A63499 /* Assets.xcassets */; };
+		D1F56B5C2646ECA500A63499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F56B5A2646ECA500A63499 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D101CE652646AF4700CF7FEA /* GeneralPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPage.swift; sourceTree = "<group>"; };
-		D101CE672646BA5800CF7FEA /* productivityWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productivityWidgets.swift; sourceTree = "<group>"; };
-		D19861442645906000EA617F /* progressControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = progressControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D19861472645906000EA617F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D19861492645906000EA617F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D198614B2645906000EA617F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D198614E2645906000EA617F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D19861502645906200EA617F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D19861532645906200EA617F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D19861552645906200EA617F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F56B4C2646ECA200A63499 /* TikTokSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTokSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F56B4F2646ECA200A63499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1F56B512646ECA200A63499 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D1F56B532646ECA200A63499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1F56B562646ECA200A63499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1F56B582646ECA500A63499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1F56B5B2646ECA500A63499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1F56B5D2646ECA500A63499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D19861412645906000EA617F /* Frameworks */ = {
+		D1F56B492646ECA200A63499 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,73 +37,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D198613B2645906000EA617F = {
+		D1F56B432646ECA200A63499 = {
 			isa = PBXGroup;
 			children = (
-				D19861462645906000EA617F /* progressControl */,
-				D19861452645906000EA617F /* Products */,
+				D1F56B4E2646ECA200A63499 /* TikTokSaver */,
+				D1F56B4D2646ECA200A63499 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D19861452645906000EA617F /* Products */ = {
+		D1F56B4D2646ECA200A63499 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D19861442645906000EA617F /* progressControl.app */,
+				D1F56B4C2646ECA200A63499 /* TikTokSaver.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D19861462645906000EA617F /* progressControl */ = {
+		D1F56B4E2646ECA200A63499 /* TikTokSaver */ = {
 			isa = PBXGroup;
 			children = (
-				D19861472645906000EA617F /* AppDelegate.swift */,
-				D19861492645906000EA617F /* SceneDelegate.swift */,
-				D198614B2645906000EA617F /* ViewController.swift */,
-				D198614D2645906000EA617F /* Main.storyboard */,
-				D101CE672646BA5800CF7FEA /* productivityWidgets.swift */,
-				D101CE652646AF4700CF7FEA /* GeneralPage.swift */,
-				D19861502645906200EA617F /* Assets.xcassets */,
-				D19861522645906200EA617F /* LaunchScreen.storyboard */,
-				D19861552645906200EA617F /* Info.plist */,
+				D1F56B4F2646ECA200A63499 /* AppDelegate.swift */,
+				D1F56B512646ECA200A63499 /* SceneDelegate.swift */,
+				D1F56B532646ECA200A63499 /* ViewController.swift */,
+				D1F56B552646ECA200A63499 /* Main.storyboard */,
+				D1F56B582646ECA500A63499 /* Assets.xcassets */,
+				D1F56B5A2646ECA500A63499 /* LaunchScreen.storyboard */,
+				D1F56B5D2646ECA500A63499 /* Info.plist */,
 			);
-			path = progressControl;
+			path = TikTokSaver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D19861432645906000EA617F /* progressControl */ = {
+		D1F56B4B2646ECA200A63499 /* TikTokSaver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D19861582645906200EA617F /* Build configuration list for PBXNativeTarget "progressControl" */;
+			buildConfigurationList = D1F56B602646ECA500A63499 /* Build configuration list for PBXNativeTarget "TikTokSaver" */;
 			buildPhases = (
-				D19861402645906000EA617F /* Sources */,
-				D19861412645906000EA617F /* Frameworks */,
-				D19861422645906000EA617F /* Resources */,
+				D1F56B482646ECA200A63499 /* Sources */,
+				D1F56B492646ECA200A63499 /* Frameworks */,
+				D1F56B4A2646ECA200A63499 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = progressControl;
-			productName = progressControl;
-			productReference = D19861442645906000EA617F /* progressControl.app */;
+			name = TikTokSaver;
+			productName = TikTokSaver;
+			productReference = D1F56B4C2646ECA200A63499 /* TikTokSaver.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D198613C2645906000EA617F /* Project object */ = {
+		D1F56B442646ECA200A63499 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					D19861432645906000EA617F = {
+					D1F56B4B2646ECA200A63499 = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
-			buildConfigurationList = D198613F2645906000EA617F /* Build configuration list for PBXProject "progressControl" */;
+			buildConfigurationList = D1F56B472646ECA200A63499 /* Build configuration list for PBXProject "TikTokSaver" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,57 +109,55 @@
 				en,
 				Base,
 			);
-			mainGroup = D198613B2645906000EA617F;
-			productRefGroup = D19861452645906000EA617F /* Products */;
+			mainGroup = D1F56B432646ECA200A63499;
+			productRefGroup = D1F56B4D2646ECA200A63499 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D19861432645906000EA617F /* progressControl */,
+				D1F56B4B2646ECA200A63499 /* TikTokSaver */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D19861422645906000EA617F /* Resources */ = {
+		D1F56B4A2646ECA200A63499 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D19861542645906200EA617F /* LaunchScreen.storyboard in Resources */,
-				D19861512645906200EA617F /* Assets.xcassets in Resources */,
-				D198614F2645906000EA617F /* Main.storyboard in Resources */,
+				D1F56B5C2646ECA500A63499 /* LaunchScreen.storyboard in Resources */,
+				D1F56B592646ECA500A63499 /* Assets.xcassets in Resources */,
+				D1F56B572646ECA200A63499 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D19861402645906000EA617F /* Sources */ = {
+		D1F56B482646ECA200A63499 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D198614C2645906000EA617F /* ViewController.swift in Sources */,
-				D19861482645906000EA617F /* AppDelegate.swift in Sources */,
-				D198614A2645906000EA617F /* SceneDelegate.swift in Sources */,
-				D101CE682646BA5800CF7FEA /* productivityWidgets.swift in Sources */,
-				D101CE662646AF4800CF7FEA /* GeneralPage.swift in Sources */,
+				D1F56B542646ECA200A63499 /* ViewController.swift in Sources */,
+				D1F56B502646ECA200A63499 /* AppDelegate.swift in Sources */,
+				D1F56B522646ECA200A63499 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D198614D2645906000EA617F /* Main.storyboard */ = {
+		D1F56B552646ECA200A63499 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D198614E2645906000EA617F /* Base */,
+				D1F56B562646ECA200A63499 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D19861522645906200EA617F /* LaunchScreen.storyboard */ = {
+		D1F56B5A2646ECA500A63499 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D19861532645906200EA617F /* Base */,
+				D1F56B5B2646ECA500A63499 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -173,7 +165,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D19861562645906200EA617F /* Debug */ = {
+		D1F56B5E2646ECA500A63499 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		D19861572645906200EA617F /* Release */ = {
+		D1F56B5F2646ECA500A63499 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,38 +281,38 @@
 			};
 			name = Release;
 		};
-		D19861592645906200EA617F /* Debug */ = {
+		D1F56B612646ECA500A63499 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5C27RD34S;
-				INFOPLIST_FILE = progressControl/Info.plist;
+				INFOPLIST_FILE = TikTokSaver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "elro-root.progressControl";
+				PRODUCT_BUNDLE_IDENTIFIER = "elro-root.TikTokSaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D198615A2645906200EA617F /* Release */ = {
+		D1F56B622646ECA500A63499 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5C27RD34S;
-				INFOPLIST_FILE = progressControl/Info.plist;
+				INFOPLIST_FILE = TikTokSaver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "elro-root.progressControl";
+				PRODUCT_BUNDLE_IDENTIFIER = "elro-root.TikTokSaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D198613F2645906000EA617F /* Build configuration list for PBXProject "progressControl" */ = {
+		D1F56B472646ECA200A63499 /* Build configuration list for PBXProject "TikTokSaver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D19861562645906200EA617F /* Debug */,
-				D19861572645906200EA617F /* Release */,
+				D1F56B5E2646ECA500A63499 /* Debug */,
+				D1F56B5F2646ECA500A63499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D19861582645906200EA617F /* Build configuration list for PBXNativeTarget "progressControl" */ = {
+		D1F56B602646ECA500A63499 /* Build configuration list for PBXNativeTarget "TikTokSaver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D19861592645906200EA617F /* Debug */,
-				D198615A2645906200EA617F /* Release */,
+				D1F56B612646ECA500A63499 /* Debug */,
+				D1F56B622646ECA500A63499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D198613C2645906000EA617F /* Project object */;
+	rootObject = D1F56B442646ECA200A63499 /* Project object */;
 }

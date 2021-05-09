@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  progressControl
+//  TikTokSaver
 //
-//  Created by Patrik Duksin on 2021-05-07.
+//  Created by Patrik Duksin on 2021-05-08.
 //
 
 import UIKit
