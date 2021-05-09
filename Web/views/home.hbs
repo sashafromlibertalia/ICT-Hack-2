@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+{{>navbar}}
+<h1 id="dateShow"></h1>
+<div id="container">
+    <section id="sec1">
+        <div class="title">
+            <h1>Обзор за</h1>
+            <span>неделю</span>
+        </div>
+        <div class="left-right-wrapper">
+            <div class="left">
+                {{#each cards}}
+                    <div class="card hidden">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <div class="img-container">
+                                    <span style="background-image: {{this.header_img}}"></span>
+                                </div>
+                                <h1>{{this.header}}</h1>
+                            </div>
+                            <div class="text">
+                                <h1>{{this.text}}</h1>
+                            </div>
+                            <div class="stats">
+                                {{#if this.stat_color}}
+                                    <span class="arrow">
+                                    <span style="background-image: {{this.arrow}}"></span>
+                                </span>
+                                    <span class="arrow-text"
+                                          style="color: {{this.stat_color}}">{{this.stat_info}}</span>
+                                {{/if}}
+                                <span class="stats-text">{{this.stat_text}}</span>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+            <div class="right">
+                <h1>Статистика по выполненным задачам</h1>
+                <canvas id="graph"></canvas>
+                <div id="otherStat">Прочая статистика</div>
+            </div>
+        </div>
+    </section>
+    <section id="sec2">
+        <div class="title">
+            <h1>Недавние проекты</h1>
+        </div>
+        <div class="left-right-wrapper">
+            <div class="projects">
+                {{#each projects}}
+                    <div class="project hidden">
+                        <div class="project-wrapper">
+                            <div class="deadline-status">
+                                <div class="deadline-container">
+                                    {{#ifEquals this.icon "circle"}}
+                                        <div class="deadline-img-container circle" style="color: #53F293"></div>
+                                        <h3 style="color: #53F293">{{this.date}}</h3>
+                                    {{else}}
+                                        <div class="deadline-img-container">
+                                            <span style="background-image: {{this.icon}}"></span>
+                                        </div>
+                                        <h3 style="color: #FF1B51">{{this.date}}</h3>
+                                    {{/ifEquals}}
+                                </div>
+                                {{#if this.isAdmin}}
+                                    <div class="admin-container">
+                                        <div class="admin-img-container">
+                                            <span style="background-image: url(/assets/projects-icons/owner.svg)"></span>
+                                        </div>
+                                        <h4>Руководитель</h4>
+                                    </div>
+                                {{/if}}
+                            </div>
+                            <div class="wrapper-med">
+                                <div class="users-wrapper">
+                                    {{#each this.users}}
+                                        {{#if @index}}
+                                        {{else}}
+                                            <div class="user" style="background-image: {{this}}; margin: 0"></div>
+                                        {{/if}}
+                                    {{/each}}
+                                    <div class="other-users">
+                                        {{#each this.users}}
+                                            {{#if @index}}
+                                                <div class="user" style="background-image: {{this}}"></div>
+                                            {{/if}}
+                                        {{/each}}
+                                    </div>
+                                </div>
+                                <div class="project-header">
+                                    <h1>{{this.header}}</h1>
+                                </div>
+                                <div class="project-description">
+                                    <p>{{this.description}}</p>
+                                </div>
+                                <div class="bottom-cont">
+                                    <div class="project-progress-tags">
+                                        <div class="progress-container">
+                                            <div class="line-container">
+                                                <div class="progress-bar">
+                                            <span class="prog-line"
+                                                  style="background-color: {{this.progress.color}}; width:  {{this.progress.value}}">
+                                            </span>
+                                                    <span class="progress-circle"
+                                                          style="color: {{this.progress.color}}; margin-left: -5px;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tags-container">
+                                            {{#each this.tags}}
+                                                <div class="tag" style="background: {{this.color}}">
+                                                    <p>{{this.title}}</p>
+                                                </div>
+                                            {{/each}}
+                                        </div>
+                                    </div>
+                                    <h5>{{this.progress.value}}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    <br/>
+    <br/>
+</div>
+{{>dropdown}}
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/home.js"></script>
+</html>

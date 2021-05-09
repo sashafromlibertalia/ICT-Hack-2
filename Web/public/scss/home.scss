@@ -1,0 +1,503 @@
+@import "variables";
+
+nav .nav-wrapper {
+  background: $main-app-color;
+}
+
+.brand-logo {
+  font-family: $helvetica;
+}
+
+li {
+  font-family: $helvetica;
+}
+
+.center {
+  color: $gray-unactive;
+  font-size: 20px;
+}
+
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
+  top: 100% !important;
+  border-radius: $defaultCornerRadius;
+
+  & li a {
+    color: $black-text-color;
+    font-family: $helvetica;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+#dateShow {
+  font-family: $helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 3%;
+  right: 3%;
+
+
+  & #sec2 {
+    height: 500px;
+  }
+
+  & section {
+    width: 100%;
+    margin-bottom: 50px;
+
+    .title {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      margin: 0;
+      align-items: center;
+
+      & h1 {
+        font-family: $proxima;
+        margin: 0;
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: $black-text-color;
+      }
+
+      & span {
+        font-family: $proxima;
+        margin: 0;
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 8px;
+        font-style: italic;
+        text-align: center;
+        color: $main-app-color;
+      }
+    }
+  }
+}
+
+.left-right-wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  justify-content: space-between;
+
+  .left {
+    width: 25%;
+    min-height: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & .card {
+      opacity: 1;
+      transition: opacity 400ms $cubic;
+      width: $cardWidth;
+      height: $cardHeight;
+      box-shadow: $defaultShadow;
+      border-radius: $defaultCornerRadius + 4px;
+
+      .card-wrapper {
+        height: 100%;
+        padding: 15px;
+
+        .card-header {
+          width: 100%;
+          height: 25%;
+          display: flex;
+
+          & h1 {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 15px;
+            margin: 0;
+            line-break: auto;
+            font-family: $proxima;
+            color: $black-text-color;
+            display: flex;
+            margin-left: 5px;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+          }
+
+          & .img-container {
+            width: 38px;
+            height: 38px;
+            padding: 4px;
+            display: table;
+            left: 0;
+            background-size: cover;
+
+            & span {
+              display: table-cell;
+              vertical-align: middle;
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+
+        .text {
+          height: 60%;
+          text-align: left;
+
+          & h1 {
+            font-weight: bold;
+            font-size: 50px;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+            line-break: auto;
+            font-family: $proxima;
+            color: $black-text-color;
+          }
+        }
+
+        .stats {
+          height: 15%;
+          display: flex;
+
+          .arrow {
+            //padding: 5px;
+            height: 100%;
+            width: 12px;
+            margin: 0;
+            display: block;
+
+            & span {
+              background-size: cover;
+              width: 12px;
+              height: 20px;
+              display: block;
+              margin: 0;
+            }
+          }
+
+          .arrow-text {
+            color: $up;
+            font-size: 14px;
+            margin-left: 5px;
+          }
+
+          .stats-text {
+            color: $gray-unactive;
+            font-family: $proxima;
+            font-size: 14px;
+            margin-left: 5px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .card.hidden {
+      opacity: 0;
+    }
+  }
+
+  .right {
+    width: 40%;
+    min-height: 180px;
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & h1 {
+      margin: 0;
+      font-family: $proxima;
+      font-size: 25px;
+      font-weight: bold;
+      font-style: italic;
+      color: $black-text-color;
+      height: fit-content;
+    }
+
+    & canvas {
+      width: 100%;
+      height: 400px;
+    }
+
+    & div {
+      width: 220px;
+      height: 40px;
+      border-radius: $defaultCornerRadius;
+      background: $main-app-color;
+      font-size: 18px;
+      font-family: $proxima;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      position: relative;
+      margin-top: 30px;
+      transform: translateX(-50%);
+      transition: 180ms $cubic all;
+
+      &:hover {
+        background: $main-app-color-hover;
+      }
+    }
+
+  }
+
+
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .project {
+      opacity: 1;
+      transition: opacity 400ms $cubic;
+      width: $projectWidth;
+      height: $projectHeight;
+      box-shadow: $defaultShadow;
+      border-radius: $defaultCornerRadius + 4px;
+      cursor: pointer;
+      position: relative;
+
+      .project-wrapper {
+        padding: $projectPadding;
+        height: 100%;
+        width: 100%;
+
+        .deadline-status {
+          width: 100%;
+          height: $projectDeadLineHeight;
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+
+          .deadline-container {
+            display: flex;
+            justify-content: flex-start;
+
+            .deadline-img-container {
+              width: $projectDeadLineHeight / 2;
+              height: $projectDeadLineHeight;
+              display: flex;
+              background-size: cover;
+              justify-content: left;
+              align-items: center;
+              text-align: left;
+
+              & span {
+                width: $projectDeadLineHeight / 2;
+                height: $projectDeadLineHeight;
+                background-size: cover;
+              }
+            }
+
+            & h3 {
+              font-weight: bolder;
+              font-family: $proxima;
+              font-size: 20px;
+              margin: 0;
+              color: $down;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              text-align: left;
+              font-style: italic;
+              margin-left: 10px;
+            }
+
+          }
+
+          .admin-container {
+            display: flex;
+            justify-content: flex-start;
+
+            & h4 {
+              font-weight: bolder;
+              font-family: $proxima;
+              font-size: 20px;
+              margin: 0;
+              color: $main-app-color;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              text-align: left;
+              font-style: italic;
+              margin-left: 10px;
+            }
+
+            .admin-img-container {
+              height: $projectDeadLineHeight;
+              width: $projectDeadLineHeight;
+              display: flex;
+              background-size: cover;
+              justify-content: left;
+              align-items: center;
+              text-align: left;
+
+              & span {
+                width: $projectDeadLineHeight;
+                height: $projectDeadLineHeight;
+                background-size: cover;
+              }
+            }
+          }
+        }
+
+        .wrapper-med {
+          width: 100%;
+          .users-wrapper {
+            width: 50px;
+            min-height: 50px;
+            position: absolute;
+            right: $projectPadding;
+            .other-users {
+              margin: -20px 0 0 0;
+            }
+            .user {
+              width: 50px;
+              margin: 0 0 -20px;
+              height: 50px;
+              border: 3px solid #FFFFFF;
+              box-sizing: border-box;
+              background-size: cover;
+              border-radius: 50px;
+            }
+          }
+
+          .project-header {
+            margin: 0;
+            margin-top: 10px;
+            max-width: 60%;
+
+            & h1 {
+              margin: 0;
+              font-family: $proxima;
+              font-weight: bold;
+              font-size: 44px;
+              color: $black-text-color;
+            }
+          }
+
+          .project-description {
+            margin: 0;
+            margin-top: 15px;
+            max-width: 75%;
+
+            & p {
+              margin: 0;
+              font-family: $helvetica;
+              font-weight: normal;
+              font-size: 18px;
+              color: $black-text-secondary;
+            }
+          }
+
+          .bottom-cont {
+            position: absolute;
+            bottom: $projectPadding;
+            width: $projectWidth - 2 * $projectPadding;
+
+            .project-progress-tags {
+              width: 100%;
+              height: $projectTagsLineHeight;
+              margin: 0;
+              display: flex;
+              justify-content: space-between;
+
+              .progress-container {
+                align-items: flex-end;
+                display: flex;
+
+                .line-container {
+                  display: block;
+
+                  .progress-bar {
+                    width: 180px;
+                    height: 10px;
+                    border-radius: 50px;
+                    background-color: $hover;
+                    display: flex;
+                    align-items: center;
+
+                    .prog-line {
+                      display: block;
+                      border-radius: 50px;
+                      height: 100%;
+                    }
+
+                    .progress-circle:before {
+                      content: '\25CF';
+                      font-size: 25px;
+                    }
+                  }
+                }
+              }
+
+              .tags-container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap-reverse;
+
+                .tag {
+                  width: auto;
+                  border-radius: $defaultCornerRadius;
+                  height: 100%;
+                  margin-left: 20px;
+                  padding: 15px;
+                  display: flex;
+
+                  & p {
+                    font-family: $helvetica;
+                    font-weight: bold;
+                    color: white;
+                    margin: 0;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+
+            & h5 {
+              color: $gray-unactive;
+              font-family: $proxima;
+              font-weight: bold;
+              font-size: 16px;
+              margin: 10px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+    .project.hidden {
+      opacity: 0;
+    }
+  }
+}
+
+.circle {
+  &:before {
+    content: ' \25CF';
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,452 @@
+@charset "UTF-8";
+@font-face {
+  src: url("/public/assets/fonts/ProximaNova-Regular.woff") format("woff");
+  font-family: "Proxima Nova", sans-serif;
+}
+@font-face {
+  src: url("/public/assets/fonts/HelveticaNeue-Roman.woff") format("woff");
+  font-family: "Helvetica Neue", sans-serif;
+}
+nav .nav-wrapper {
+  background: #1963A8;
+}
+
+.brand-logo {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+li {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.center {
+  color: #D0D0D0;
+  font-size: 20px;
+}
+
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
+  top: 100% !important;
+  border-radius: 3px;
+}
+.dropdown-content li a {
+  color: #191E24;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#dateShow {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 3%;
+  right: 3%;
+}
+#container #sec2 {
+  height: 500px;
+}
+#container section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#container section .title {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0;
+  align-items: center;
+}
+#container section .title h1 {
+  font-family: "Proxima Nova", sans-serif;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #191E24;
+}
+#container section .title span {
+  font-family: "Proxima Nova", sans-serif;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 8px;
+  font-style: italic;
+  text-align: center;
+  color: #1963A8;
+}
+
+.left-right-wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.left-right-wrapper .left {
+  width: 25%;
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.left-right-wrapper .left .card {
+  opacity: 1;
+  transition: opacity 400ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  width: 210px;
+  height: 180px;
+  box-shadow: 0 0 16px #E6E6E6;
+  border-radius: 7px;
+}
+.left-right-wrapper .left .card .card-wrapper {
+  height: 100%;
+  padding: 15px;
+}
+.left-right-wrapper .left .card .card-wrapper .card-header {
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+.left-right-wrapper .left .card .card-wrapper .card-header h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+  line-break: auto;
+  font-family: "Proxima Nova", sans-serif;
+  color: #191E24;
+  display: flex;
+  margin-left: 5px;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+.left-right-wrapper .left .card .card-wrapper .card-header .img-container {
+  width: 38px;
+  height: 38px;
+  padding: 4px;
+  display: table;
+  left: 0;
+  background-size: cover;
+}
+.left-right-wrapper .left .card .card-wrapper .card-header .img-container span {
+  display: table-cell;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+.left-right-wrapper .left .card .card-wrapper .text {
+  height: 60%;
+  text-align: left;
+}
+.left-right-wrapper .left .card .card-wrapper .text h1 {
+  font-weight: bold;
+  font-size: 50px;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  line-break: auto;
+  font-family: "Proxima Nova", sans-serif;
+  color: #191E24;
+}
+.left-right-wrapper .left .card .card-wrapper .stats {
+  height: 15%;
+  display: flex;
+}
+.left-right-wrapper .left .card .card-wrapper .stats .arrow {
+  height: 100%;
+  width: 12px;
+  margin: 0;
+  display: block;
+}
+.left-right-wrapper .left .card .card-wrapper .stats .arrow span {
+  background-size: cover;
+  width: 12px;
+  height: 20px;
+  display: block;
+  margin: 0;
+}
+.left-right-wrapper .left .card .card-wrapper .stats .arrow-text {
+  color: #53F293;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.left-right-wrapper .left .card .card-wrapper .stats .stats-text {
+  color: #D0D0D0;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.left-right-wrapper .left .card.hidden {
+  opacity: 0;
+}
+.left-right-wrapper .right {
+  width: 40%;
+  min-height: 180px;
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.left-right-wrapper .right h1 {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  color: #191E24;
+  height: fit-content;
+}
+.left-right-wrapper .right canvas {
+  width: 100%;
+  height: 400px;
+}
+.left-right-wrapper .right div {
+  width: 220px;
+  height: 40px;
+  border-radius: 3px;
+  background: #1963A8;
+  font-size: 18px;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  position: relative;
+  margin-top: 30px;
+  transform: translateX(-50%);
+  transition: 180ms cubic-bezier(0.4, 0.01, 0.165, 0.99) all;
+}
+.left-right-wrapper .right div:hover {
+  background: #144C80;
+}
+.left-right-wrapper .projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.left-right-wrapper .projects .project {
+  opacity: 1;
+  transition: opacity 400ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  width: 720px;
+  height: 380px;
+  box-shadow: 0 0 16px #E6E6E6;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+}
+.left-right-wrapper .projects .project .project-wrapper {
+  padding: 35px;
+  height: 100%;
+  width: 100%;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status {
+  width: 100%;
+  height: 24px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .deadline-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .deadline-container .deadline-img-container {
+  width: 12px;
+  height: 24px;
+  display: flex;
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .deadline-container .deadline-img-container span {
+  width: 12px;
+  height: 24px;
+  background-size: cover;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .deadline-container h3 {
+  font-weight: bolder;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #FF1B51;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  font-style: italic;
+  margin-left: 10px;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .admin-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .admin-container h4 {
+  font-weight: bolder;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #1963A8;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  font-style: italic;
+  margin-left: 10px;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .admin-container .admin-img-container {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+.left-right-wrapper .projects .project .project-wrapper .deadline-status .admin-container .admin-img-container span {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med {
+  width: 100%;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .users-wrapper {
+  width: 50px;
+  min-height: 50px;
+  position: absolute;
+  right: 35px;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .users-wrapper .other-users {
+  margin: -20px 0 0 0;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .users-wrapper .user {
+  width: 50px;
+  margin: 0 0 -20px;
+  height: 50px;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  background-size: cover;
+  border-radius: 50px;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .project-header {
+  margin: 0;
+  margin-top: 10px;
+  max-width: 60%;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .project-header h1 {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  color: #191E24;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .project-description {
+  margin: 0;
+  margin-top: 15px;
+  max-width: 75%;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .project-description p {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(25, 30, 36, 0.6);
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont {
+  position: absolute;
+  bottom: 35px;
+  width: 650px;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container {
+  align-items: flex-end;
+  display: flex;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container .line-container {
+  display: block;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container .line-container .progress-bar {
+  width: 180px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container .line-container .progress-bar .prog-line {
+  display: block;
+  border-radius: 50px;
+  height: 100%;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container .line-container .progress-bar .progress-circle:before {
+  content: "●";
+  font-size: 25px;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .tags-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .tags-container .tag {
+  width: auto;
+  border-radius: 3px;
+  height: 100%;
+  margin-left: 20px;
+  padding: 15px;
+  display: flex;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .tags-container .tag p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont h5 {
+  color: #D0D0D0;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0 0 0;
+}
+.left-right-wrapper .projects .project.hidden {
+  opacity: 0;
+}
+
+.circle:before {
+  content: " ●";
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=home.css.map */

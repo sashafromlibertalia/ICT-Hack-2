@@ -1,0 +1,40 @@
+<nav>
+    <div class="nav-wrapper row">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+            {{#if isHome}}
+                <li class="col s2 active"><a href="/home" class="center" style="color: white"><b>Главная</b></a></li>
+            {{else}}
+                <li class="col s2"><a href="/home" class="center" style="color: #D0D0D0"><b>Главная</b></a></li>
+            {{/if}}
+            {{#if isProjects}}
+                <li class="col s2 active"><a href="/my-projects" class="center" style="white-space: nowrap; color: white">Мои проекты</a></li>
+            {{else}}
+                <li class="col s2"><a href="/my-projects" class="center" style="white-space: nowrap; color: #D0D0D0">Мои проекты</a></li>
+            {{/if}}
+            {{#if isDeadlines}}
+                <li class="col s2 active"><a href="/deadlines" class="center" style="color: white">Дедлайны</a></li>
+            {{else}}
+                <li class="col s2"><a href="/deadlines" class="center" style="color: #D0D0D0">Дедлайны</a></li>
+            {{/if}}
+
+            {{#if isGoals}}
+                <li class="col s2 active"><a href="/achievements" class="center" style="color: white">Достижения</a></li>
+            {{else}}
+                <li class="col s2"><a href="/achievements" class="center" style="color: #D0D0D0">Достижения</a></li>
+            {{/if}}
+            <li class="right col s1">
+                <a class="dropdown-trigger" data-target="dropdown_menu">
+                    <img src="/assets/ava.jpg"
+                         alt="Это ваше фото"
+                         class="circle responsive-img"
+                         width="50px"
+                         align="center"
+                         style="object-fit: cover; height: 50px">
+                    <i class="material-icons right" style="padding-left: 50px">arrow_drop_down</i>
+                    Меню
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

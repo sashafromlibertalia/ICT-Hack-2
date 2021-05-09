@@ -1,0 +1,41 @@
+@font-face {
+  src: url("/public/assets/fonts/ProximaNova-Regular.woff") format('woff');
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+@font-face {
+  src: url("/public/assets/fonts/HelveticaNeue-Roman.woff") format('woff');
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+$main-app-color: #1963A8;
+$main-app-color-hover: #144C80;
+
+$black-text-color: #191E24;
+
+$black-text-secondary: rgba(25, 30, 36, 0.6);
+$up: #53F293;
+$down: #FF1B51;
+$gray-unactive: #D0D0D0;
+$hover: #F5F5F5;
+
+$projectPadding: 35px;
+
+$defaultCornerRadius: 3px;
+
+
+$proxima: 'Proxima Nova', sans-serif;
+$helvetica: 'Helvetica Neue', sans-serif;
+
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$defaultShadow: 0 0 16px #E6E6E6;
+
+$cardWidth: 210px;
+$cardHeight: 180px;
+
+$projectWidth: 720px;
+$projectHeight: 380px;
+
+$projectDeadLineHeight: 24px;
+$projectTagsLineHeight: 40px;
