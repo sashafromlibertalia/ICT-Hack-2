@@ -18,7 +18,7 @@ struct profilePage: View {
                 
                 ZStack {
                     Color(red: 252 / 255, green: 253 / 255, blue: 1, opacity: 1).edgesIgnoringSafeArea(.all)
-                    cardView(image: "profilePhoto", name: "Patrik Duksin", bio: "Учусь прогать , люблю путешествия, люблю ебанные хакатоны, а еще канал в тг веду t.me/patriklife")
+                    cardView(image: "profilePhoto", name: "Patrik Duksin", bio: "Учусь прогать , люблю путешествия, люблю хакатоны, а еще канал в тг веду t.me/patriklife")
                         .padding(.top, 10)
                         .shadow(color: Color.black.opacity(0.4), radius: 20, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 10)
                         .shadow(color: Color.black.opacity(0.4), radius: 5, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 5)
