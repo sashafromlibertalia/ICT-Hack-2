@@ -71,8 +71,12 @@ form {
     margin-top: 150px;
     overflow: hidden;
     left: 50%;
-  }
+    transition: 180ms $cubic all;
 
+    &:hover {
+      background: $main-app-color-hover;
+    }
+  }
 
   & input {
     outline: none;

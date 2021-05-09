@@ -2,6 +2,17 @@ $('.dropdown-trigger').dropdown({
     'closeOnClick': true
 })
 
+function dateShow() {
+    document.querySelector("#dateShow").innerHTML =  moment().format("HH:mm:ss, DD.MM.YY")
+}
+
+window.onload = (() => {
+    dateShow()
+    setInterval(() => {
+        dateShow()
+    }, 1000)
+})
+
 let ctx = document.getElementById('graph').getContext('2d')
 new Chart(ctx, {
     type: 'bar',
