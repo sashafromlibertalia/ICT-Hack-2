@@ -9,4 +9,5 @@ import Foundation
 enum Page {
     case loginPage
     case generalPage
+    case profilePage
 }

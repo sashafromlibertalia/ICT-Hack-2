@@ -16,7 +16,6 @@ struct TabBar: View {
     }
     
     @State private var selectedTab: Tab = .general
-    
     var body: some View {
         TabView(selection: $selectedTab) {
             generalPage()
@@ -43,6 +42,7 @@ struct TabBar: View {
                     Text("Profile")
                     Image(systemName: "person")
                 }
+                
         }
     }
 }

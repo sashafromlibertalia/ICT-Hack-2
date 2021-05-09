@@ -9,6 +9,8 @@ struct MotherView: View {
         case .generalPage:
             TabBar()
                 .transition(.scale)
+        case .profilePage:
+            TabBar()
         }
     }
 }

@@ -77,7 +77,6 @@
 				D10839B526474F070032D4B9 /* Assets.xcassets */,
 				D10839BA26474F070032D4B9 /* Info.plist */,
 				D10839B726474F070032D4B9 /* Preview Content */,
-				D13F113E2647DB66009B0E03 /* TabBar.swift */,
 			);
 			path = ProView;
 			sourceTree = "<group>";
@@ -93,6 +92,7 @@
 		D13F114E2647E6B4009B0E03 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
+				D13F113E2647DB66009B0E03 /* TabBar.swift */,
 				D13F11462647DE36009B0E03 /* generalPage.swift */,
 				D13F11482647DFFE009B0E03 /* myTeamPage.swift */,
 				D13F114A2647E24B009B0E03 /* deadlinePage.swift */,
