@@ -25,7 +25,7 @@
 4) Ближайший дедлайн (дата и сама задача)
 5) Статистика по выполненным задачам - график, отображающий количество решённых задач в каждый из дней за текущую неделю
 
-![Главный экран](https://user-images.githubusercontent.com/82240296/117554241-1247a900-b05f-11eb-8b1e-d80fffddf900.png)
+<img width="923" alt="Главная" src="https://user-images.githubusercontent.com/82240296/117569398-31315400-b0ce-11eb-9b32-6ccab042e8fa.png">
 
 <br><br>
 
@@ -33,7 +33,7 @@
 1) Все ваши проекты с пометками об их состоянии
 2) Общая статистика по проектам и о вашем участии в них
 
-![Мои проекты](https://user-images.githubusercontent.com/82240296/117554736-28a33400-b062-11eb-8e83-21e97158dd1a.png)
+<img width="934" alt="Мои проекты" src="https://user-images.githubusercontent.com/82240296/117569437-57ef8a80-b0ce-11eb-9ed7-924628df1c83.png">
 
 <br><br>
 
