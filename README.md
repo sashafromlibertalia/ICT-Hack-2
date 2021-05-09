@@ -1,11 +1,12 @@
 # `ProView`
 ## Проект ICT.Hack - платформа для публичного отслеживания прогресса достижений в разработке проекта
+> [Figma](https://www.figma.com/file/BNUM0WURtN5FmzrffycsR8/%D0%A5%D0%B0%D0%BA%D0%B0%D1%82%D0%BE%D0%BD?node-id=0%3A1)
 
 ### Стек использованных технологий: 
 
 |                                Frontend                               |          Backend        |  Mobile |
 | :-------------------------------------------------------------------: | :---------------------: | :-----: |
-| `MaterializeCss`<br> `Handlebars`<br> `chartJS`<br>`jQuery`<br>`SCSS` | `Node.js`<br> `mongoDB` | `Swift` |
+| `MaterializeCss`<br> `Handlebars`<br> `moment.js` <br>`chartJS`<br>`jQuery`<br>`SCSS` | `Node.js`<br> `mongoDB` | `SwiftUI` |
 
 <br>
 
