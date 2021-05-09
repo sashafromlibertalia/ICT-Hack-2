@@ -101,6 +101,8 @@ li {
     flex-wrap: wrap;
 
     & .card {
+      opacity: 1;
+      transition: opacity 400ms $cubic;
       width: $cardWidth;
       height: $cardHeight;
       box-shadow: $defaultShadow;
@@ -202,6 +204,9 @@ li {
         }
       }
     }
+    .card.hidden {
+      opacity: 0;
+    }
   }
 
   .right {
@@ -262,6 +267,8 @@ li {
     width: 100%;
 
     .project {
+      opacity: 1;
+      transition: opacity 400ms $cubic;
       width: $projectWidth;
       height: $projectHeight;
       box-shadow: $defaultShadow;
@@ -459,6 +466,9 @@ li {
           }
         }
       }
+    }
+    .project.hidden {
+      opacity: 0;
     }
   }
 }

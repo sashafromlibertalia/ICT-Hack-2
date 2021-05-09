@@ -3,8 +3,23 @@ $('.dropdown-trigger').dropdown({
 })
 
 function dateShow() {
-    document.querySelector("#dateShow").innerHTML =  moment().format("HH:mm:ss, DD.MM.YY")
+    document.querySelector("#dateShow").innerHTML = moment().format("HH:mm:ss, DD.MM.YY")
 }
+
+$(document).ready(() => {
+    $('.left').children().each((index, elem) => {
+        setTimeout(() => {
+            elem.classList.remove("hidden")
+        }, index * 120)
+    })
+    setTimeout(() => {
+        $('.projects').children().each((index, elem) => {
+            setTimeout(() => {
+                elem.classList.remove("hidden")
+            }, index * 120)
+        })
+    }, 500)
+})
 
 window.onload = (() => {
     dateShow()
