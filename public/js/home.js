@@ -18,7 +18,7 @@ $(document).ready(() => {
                 elem.classList.remove("hidden")
             }, index * 120)
         })
-    }, 500)
+    }, 600)
 })
 
 window.onload = (() => {

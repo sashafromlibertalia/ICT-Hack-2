@@ -360,109 +360,131 @@ li {
           }
         }
 
-        .project-header {
-          margin: 0;
-          margin-top: 10px;
-          max-width: 60%;
-
-          & h1 {
-            margin: 0;
-            font-family: $proxima;
-            font-weight: bold;
-            font-size: 44px;
-            color: $black-text-color;
-          }
-        }
-
-        .project-description {
-          margin: 0;
-          margin-top: 15px;
-          max-width: 75%;
-
-          & p {
-            margin: 0;
-            font-family: $helvetica;
-            font-weight: normal;
-            font-size: 18px;
-            color: $black-text-secondary;
-          }
-        }
-
-        .bottom-cont {
-          position: absolute;
-          bottom: $projectPadding;
-          width: $projectWidth - 2 * $projectPadding;
-
-          .project-progress-tags {
-            width: 100%;
-            height: $projectTagsLineHeight;
-            margin: 0;
-            display: flex;
-            justify-content: space-between;
-
-            .progress-container {
-              align-items: flex-end;
-              display: flex;
-
-              .line-container {
-                display: block;
-
-                .progress-bar {
-                  width: 180px;
-                  height: 10px;
-                  border-radius: 50px;
-                  background-color: $hover;
-                  display: flex;
-                  align-items: center;
-
-                  .prog-line {
-                    display: block;
-                    border-radius: 50px;
-                    height: 100%;
-                  }
-
-                  .progress-circle:before {
-                    content: '\25CF';
-                    font-size: 25px;
-                  }
-                }
-              }
+        .wrapper-med {
+          width: 100%;
+          .users-wrapper {
+            width: 50px;
+            min-height: 50px;
+            position: absolute;
+            right: $projectPadding;
+            .other-users {
+              margin: -20px 0 0 0;
             }
+            .user {
+              width: 50px;
+              margin: 0 0 -20px;
+              height: 50px;
+              border: 3px solid #FFFFFF;
+              box-sizing: border-box;
+              background-size: cover;
+              border-radius: 50px;
+            }
+          }
 
-            .tags-container {
+          .project-header {
+            margin: 0;
+            margin-top: 10px;
+            max-width: 60%;
+
+            & h1 {
+              margin: 0;
+              font-family: $proxima;
+              font-weight: bold;
+              font-size: 44px;
+              color: $black-text-color;
+            }
+          }
+
+          .project-description {
+            margin: 0;
+            margin-top: 15px;
+            max-width: 75%;
+
+            & p {
+              margin: 0;
+              font-family: $helvetica;
+              font-weight: normal;
+              font-size: 18px;
+              color: $black-text-secondary;
+            }
+          }
+
+          .bottom-cont {
+            position: absolute;
+            bottom: $projectPadding;
+            width: $projectWidth - 2 * $projectPadding;
+
+            .project-progress-tags {
+              width: 100%;
+              height: $projectTagsLineHeight;
+              margin: 0;
               display: flex;
               justify-content: space-between;
-              flex-wrap: wrap-reverse;
 
-              .tag {
-                width: auto;
-                border-radius: $defaultCornerRadius;
-                height: 100%;
-                margin-left: 20px;
-                padding: 15px;
+              .progress-container {
+                align-items: flex-end;
                 display: flex;
 
-                & p {
-                  font-family: $helvetica;
-                  font-weight: bold;
-                  color: white;
-                  margin: 0;
+                .line-container {
+                  display: block;
+
+                  .progress-bar {
+                    width: 180px;
+                    height: 10px;
+                    border-radius: 50px;
+                    background-color: $hover;
+                    display: flex;
+                    align-items: center;
+
+                    .prog-line {
+                      display: block;
+                      border-radius: 50px;
+                      height: 100%;
+                    }
+
+                    .progress-circle:before {
+                      content: '\25CF';
+                      font-size: 25px;
+                    }
+                  }
+                }
+              }
+
+              .tags-container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap-reverse;
+
+                .tag {
+                  width: auto;
+                  border-radius: $defaultCornerRadius;
+                  height: 100%;
+                  margin-left: 20px;
+                  padding: 15px;
                   display: flex;
-                  justify-content: left;
-                  align-items: center;
-                  text-align: center;
-                  font-size: 15px;
+
+                  & p {
+                    font-family: $helvetica;
+                    font-weight: bold;
+                    color: white;
+                    margin: 0;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 15px;
+                  }
                 }
               }
             }
-          }
 
-          & h5 {
-            color: $gray-unactive;
-            font-family: $proxima;
-            font-weight: bold;
-            font-size: 16px;
-            margin: 10px 0 0 0;
+            & h5 {
+              color: $gray-unactive;
+              font-family: $proxima;
+              font-weight: bold;
+              font-size: 16px;
+              margin: 10px 0 0 0;
+            }
           }
         }
       }

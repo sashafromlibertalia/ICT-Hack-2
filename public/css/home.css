@@ -328,50 +328,71 @@ li {
   height: 24px;
   background-size: cover;
 }
-.left-right-wrapper .projects .project .project-wrapper .project-header {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med {
+  width: 100%;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .users-wrapper {
+  width: 50px;
+  min-height: 50px;
+  position: absolute;
+  right: 35px;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .users-wrapper .other-users {
+  margin: -20px 0 0 0;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .users-wrapper .user {
+  width: 50px;
+  margin: 0 0 -20px;
+  height: 50px;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  background-size: cover;
+  border-radius: 50px;
+}
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .project-header {
   margin: 0;
   margin-top: 10px;
   max-width: 60%;
 }
-.left-right-wrapper .projects .project .project-wrapper .project-header h1 {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .project-header h1 {
   margin: 0;
   font-family: "Proxima Nova", sans-serif;
   font-weight: bold;
   font-size: 44px;
   color: #191E24;
 }
-.left-right-wrapper .projects .project .project-wrapper .project-description {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .project-description {
   margin: 0;
   margin-top: 15px;
   max-width: 75%;
 }
-.left-right-wrapper .projects .project .project-wrapper .project-description p {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .project-description p {
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: normal;
   font-size: 18px;
   color: rgba(25, 30, 36, 0.6);
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont {
   position: absolute;
   bottom: 35px;
   width: 650px;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont .project-progress-tags {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags {
   width: 100%;
   height: 40px;
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont .project-progress-tags .progress-container {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container {
   align-items: flex-end;
   display: flex;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont .project-progress-tags .progress-container .line-container {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container .line-container {
   display: block;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont .project-progress-tags .progress-container .line-container .progress-bar {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container .line-container .progress-bar {
   width: 180px;
   height: 10px;
   border-radius: 50px;
@@ -379,21 +400,21 @@ li {
   display: flex;
   align-items: center;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont .project-progress-tags .progress-container .line-container .progress-bar .prog-line {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container .line-container .progress-bar .prog-line {
   display: block;
   border-radius: 50px;
   height: 100%;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont .project-progress-tags .progress-container .line-container .progress-bar .progress-circle:before {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .progress-container .line-container .progress-bar .progress-circle:before {
   content: "●";
   font-size: 25px;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont .project-progress-tags .tags-container {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .tags-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont .project-progress-tags .tags-container .tag {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .tags-container .tag {
   width: auto;
   border-radius: 3px;
   height: 100%;
@@ -401,7 +422,7 @@ li {
   padding: 15px;
   display: flex;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont .project-progress-tags .tags-container .tag p {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont .project-progress-tags .tags-container .tag p {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: bold;
   color: white;
@@ -412,7 +433,7 @@ li {
   text-align: center;
   font-size: 15px;
 }
-.left-right-wrapper .projects .project .project-wrapper .bottom-cont h5 {
+.left-right-wrapper .projects .project .project-wrapper .wrapper-med .bottom-cont h5 {
   color: #D0D0D0;
   font-family: "Proxima Nova", sans-serif;
   font-weight: bold;

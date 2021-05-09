@@ -61,7 +61,8 @@
         <div class="left-right-wrapper">
             <div class="projects">
                 {{#each projects}}
-                    <div class="project hidden">
+<!--                    Добавить hidden-->
+                    <div class="project">
                         <div class="project-wrapper">
                             <div class="deadline-status">
                                 <div class="deadline-container">
@@ -84,34 +85,51 @@
                                     </div>
                                 {{/if}}
                             </div>
-                            <div class="project-header">
-                                <h1>{{this.header}}</h1>
-                            </div>
-                            <div class="project-description">
-                                <p>{{this.description}}</p>
-                            </div>
-                            <div class="bottom-cont">
-                                <div class="project-progress-tags">
-                                    <div class="progress-container">
-                                        <div class="line-container">
-                                            <div class="progress-bar">
-                                            <span class="prog-line"
-                                                  style="background-color: {{this.progress.color}}; width:  {{this.progress.value}}">
-                                            </span>
-                                                <span class="progress-circle"
-                                                      style="color: {{this.progress.color}}; margin-left: -5px;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tags-container">
-                                        {{#each this.tags}}
-                                            <div class="tag" style="background: {{this.color}}">
-                                                <p>{{this.title}}</p>
-                                            </div>
+                            <div class="wrapper-med">
+                                <div class="users-wrapper">
+                                    {{#each this.users}}
+                                        {{#if @index}}
+                                        {{else}}
+                                            <div class="user" style="background-image: {{this}}; margin: 0"></div>
+                                        {{/if}}
+                                    {{/each}}
+                                    <div class="other-users">
+                                        {{#each this.users}}
+                                            {{#if @index}}
+                                                <div class="user" style="background-image: {{this}}"></div>
+                                            {{/if}}
                                         {{/each}}
                                     </div>
                                 </div>
-                                <h5>{{this.progress.value}}</h5>
+                                <div class="project-header">
+                                    <h1>{{this.header}}</h1>
+                                </div>
+                                <div class="project-description">
+                                    <p>{{this.description}}</p>
+                                </div>
+                                <div class="bottom-cont">
+                                    <div class="project-progress-tags">
+                                        <div class="progress-container">
+                                            <div class="line-container">
+                                                <div class="progress-bar">
+                                            <span class="prog-line"
+                                                  style="background-color: {{this.progress.color}}; width:  {{this.progress.value}}">
+                                            </span>
+                                                    <span class="progress-circle"
+                                                          style="color: {{this.progress.color}}; margin-left: -5px;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tags-container">
+                                            {{#each this.tags}}
+                                                <div class="tag" style="background: {{this.color}}">
+                                                    <p>{{this.title}}</p>
+                                                </div>
+                                            {{/each}}
+                                        </div>
+                                    </div>
+                                    <h5>{{this.progress.value}}</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
